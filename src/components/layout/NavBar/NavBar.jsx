@@ -44,10 +44,6 @@ const navButtons = [
           {
             to: HOLIDAY,
             label: 'Holiday'
-          },
-          {
-            to: HOME,
-            label: 'Home'
           }
         ]
       },
