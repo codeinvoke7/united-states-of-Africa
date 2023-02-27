@@ -89,7 +89,7 @@ Checks if files obeys the Eslint rules and are formatted properly
 ### Project Structure
 
 `/components` contains global components and atomic or modular components.
-
+```
 components
 ├── guards
 │   └── ProtectedRoutes.js
@@ -113,13 +113,14 @@ components
 │   │   ├──SecondaryButton.js
 │   │   └── index.js
 │   └── index.js
+```
 
 Global components like `ProtectedRoutes.js` and NavBar are parent components of all pages in the router. For example, AuthGuard.js wraps around components that need authentication, checks if the user is authenticated, and jumps to the login page if not.
 
 Atomic components like `PrimaryButton.js` are the smallest UI components that will be reused in modules and pages.
 
 Modular components like `UserCard.js` are modules that contain multiple widgets as a component to serve a specific function, which are reused in more than one page.
-
+```
 `/pages`
 
 pages
@@ -142,6 +143,7 @@ pages
 │   │   ├── AccountSettings.js
 │   │   └── NotificationSettings.js
 │   └── index.js
+```
 
 `/pages` contains pages shown on the website. It should be structured in a similar way as the router to give you a better understanding of how the real website would be browsed. This is also similar to the Next.js approach.
 
