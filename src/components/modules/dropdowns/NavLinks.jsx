@@ -27,7 +27,7 @@ export default function NavLinks({
         <span>{label}</span>
         {endDropdownIcon || null}
         {defaultIcon && (
-          <DropdownIcon down className={`group-hover/outer:-rotate-180 transition-transform`} />
+          <DropdownIcon right className={`group-hover/outer:rotate-90 transition-transform`} />
         )}
       </button>
       <ul

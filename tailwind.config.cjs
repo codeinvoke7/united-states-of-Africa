@@ -22,11 +22,7 @@ module.exports = {
       lg: '64rem',
       xl: '80rem'
     },
-    extend: {
-      screens: {
-        md: '886px'
-      }
-    }
+    extend: {}
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp'), require('daisyui')],
   daisyui: {

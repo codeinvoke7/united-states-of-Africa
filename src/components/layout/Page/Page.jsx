@@ -8,7 +8,7 @@ export default function Page() {
 
       <NavBar />
 
-      <main className="min-h-[50dvh]">
+      <main className="min-h-[50vh]">
         <Outlet />
       </main>
 

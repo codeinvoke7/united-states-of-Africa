@@ -5,14 +5,14 @@ import { NavLinkButton } from 'components/widgets/buttons';
 import { Divide } from 'hamburger-react';
 import {
   ABOUT,
-  BECOME_A_PATRON,
   EVENTS,
-  FUNDRAISE,
-  GIVE_US_A_REVIEW,
   HOLIDAY,
   HOME,
-  PROGRAMS,
-  VOLUNTEER
+  VOLUNTEER,
+  DEPARTMENTS,
+  FAQS,
+  SIGN_IN,
+  DONATE
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -30,51 +30,33 @@ const navButtons = [
     label: 'Get Involved',
     dropdownLinks: [
       {
-        label: 'Activity',
-        className: 'sm:dropdown-left',
-        dropdownLinks: [
-          {
-            to: EVENTS,
-            label: 'Events'
-          },
-          {
-            to: PROGRAMS,
-            label: 'Programs'
-          },
-          {
-            to: HOLIDAY,
-            label: 'Holiday'
-          }
-        ]
-      },
-      {
-        to: FUNDRAISE,
-        label: 'Fundraise'
-      },
-      {
-        to: GIVE_US_A_REVIEW,
-        label: 'Give us a review'
+        to: DONATE,
+        label: 'Donate'
       },
       {
         to: VOLUNTEER,
         label: 'Volunteer'
       },
       {
-        to: BECOME_A_PATRON,
-        label: 'Become a Patron'
+        to: EVENTS,
+        label: 'Events'
+      },
+      {
+        to: HOLIDAY,
+        label: 'Holidays'
       }
     ]
   },
   {
-    to: '/departments',
+    to: DEPARTMENTS,
     label: 'Departments'
   },
   {
-    to: '/faq',
-    label: "FAQ's"
+    to: FAQS,
+    label: 'FAQs'
   },
   {
-    to: '/sign_in',
+    to: SIGN_IN,
     label: 'Sign in / Create Account',
     signIn: true
   }
