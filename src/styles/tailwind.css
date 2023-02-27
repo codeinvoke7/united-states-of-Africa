@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* prettier-ignore-start */
+nav .btn[aria-current='page'].active,
+nav [role='listbox'].dropdown:has(ul a.active) .btn,
+nav [role='listbox'].dropdown li:has(a[aria-current='page'].active) > * {
+    @apply text-primary;
+}
+
+nav [role='listbox'].dropdown li > * {
+    @apply btn-ghost
+}
+
+nav .dropdown.dropdown-hover:hover .dropdown-content {
+    @apply hidden
+}
+
+nav .dropdown.dropdown-hover:hover > .dropdown-content,
+nav .dropdown.dropdown-hover :focus ~ .dropdown-content {
+    @apply block
+}
+
+.bg-neutral > .footer .footer-title {
+    @apply text-neutral-content;
+}
+/* prettier-ignore-end */
