@@ -149,16 +149,18 @@ pages
 
 For example, the outer folder `/account` is an entrance on the navbar, which includes two pages profile and settings. Each page folder has an `index.js` (the page itself), and contains modules that made up this page in the `/components` folder.
 
+```
 slices
 ├── itemSlice.js
 └── userSlice.js
-
+```
 Now for the logic side. We are using `Redux Toolkit` which allows us to handle Redux actions and reducers easily in one place called a “slice”. It also comes with many useful middlewares like `createAsyncThunk`.
 
 `/slices` basically contains all the Redux Toolkit slices. You can think of `/slices` as a central place that governs the global state and the specified functions to modify it. Each slice that handles an aspect of the app’s global state should be separated into one file.
 
+```
 utils
 ├── objDeepCopy.js
 └── setAuthToken.js
-
+```
 `/utils` contains files that deal with logic to fulfill a certain function. They are functional pieces commonly used in many places in the project.
