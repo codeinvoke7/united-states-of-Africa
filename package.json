@@ -13,7 +13,6 @@
     "format": "prettier --write .",
     "check:format": "prettier --check .",
     "lint-staged": "lint-staged --config lint-staged.js",
-    "husky-install": "husky install",
     "test-all": "run-s check:format lint",
     "prepare": "husky install"
   },
@@ -46,6 +45,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "postcss-selector-parser": "^6.0.11",
     "prettier": "^2.8.4",
