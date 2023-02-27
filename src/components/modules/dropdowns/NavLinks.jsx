@@ -16,7 +16,7 @@ export default function NavLinks({
   return (
     <div
       role="listbox"
-      className={clsx(['dropdown dropdown-hover w-full isolate group/outer', className])}
+      className={clsx(['dropdown dropdown-hover w-full group/outer', className])}
       {...rest}
     >
       <button
@@ -27,7 +27,7 @@ export default function NavLinks({
         <span>{label}</span>
         {endDropdownIcon || null}
         {defaultIcon && (
-          <DropdownIcon down className={`group-hover/outer:-rotate-180 transition-transform`} />
+          <DropdownIcon right className={`group-hover/outer:rotate-90 transition-transform`} />
         )}
       </button>
       <ul

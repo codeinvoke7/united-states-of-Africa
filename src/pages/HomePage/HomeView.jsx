@@ -1,9 +1,9 @@
-import React from 'react';
+import { CallToActionSection } from 'components/layout/Home';
 
 function HomeView() {
   return (
     <>
-      <div>Home</div>
+      <CallToActionSection />
     </>
   );
 }

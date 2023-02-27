@@ -9,15 +9,43 @@ export default function Language({ className }) {
   const languages = [
     {
       name: 'English',
-      code: 'en',
-      icon: <FlagIcon country="gb" />,
+      icon: <FlagIcon name="gb" />,
       abbreviation: 'Eng'
     },
     {
       name: 'French',
-      code: 'fr',
-      icon: <FlagIcon country="fr" />,
+      icon: <FlagIcon name="fr" />,
       abbreviation: 'Fra'
+    },
+    {
+      name: 'Amharic',
+      icon: <FlagIcon name="am" />,
+      abbreviation: 'Am'
+    },
+    {
+      name: 'Hausa',
+      icon: <FlagIcon name="ha" />,
+      abbreviation: 'Ha'
+    },
+    {
+      name: 'Yoruba',
+      icon: <FlagIcon name="yo" />,
+      abbreviation: 'Yo'
+    },
+    {
+      name: 'Swahili',
+      icon: <FlagIcon name="sw" />,
+      abbreviation: 'Sw'
+    },
+    {
+      name: 'Oromo',
+      icon: <FlagIcon name="orm" />,
+      abbreviation: 'Orm'
+    },
+    {
+      name: 'Zulu',
+      icon: <FlagIcon name="zu" />,
+      abbreviation: 'Zu'
     }
   ];
 
@@ -36,7 +64,11 @@ export default function Language({ className }) {
       </button>
       <ul tabIndex={0} className={'dropdown-content menu bg-base-100 p-2 shadow rounded-box'}>
         {languages.map((language, index) => (
-          <li key={language?.code} onClick={() => changeLanguage(index)} className="items-center">
+          <li
+            key={language?.name + language?.abbreviation + index}
+            onClick={() => changeLanguage(index)}
+            className="items-start"
+          >
             <a className="px-6 rounded-none bg-opacity-50 capitalize">
               {language?.icon}
               <span>{language?.name}</span>

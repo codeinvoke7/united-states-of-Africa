@@ -1,3 +1,1 @@
-import { TwitterButton } from 'components/widgets/buttons';
-
-export default TwitterButton;
+export { default as CallToActionSection } from './CallToActionSection';

@@ -5,14 +5,14 @@ import { NavLinkButton } from 'components/widgets/buttons';
 import { Divide } from 'hamburger-react';
 import {
   ABOUT,
-  BECOME_A_PATRON,
   EVENTS,
-  FUNDRAISE,
-  GIVE_US_A_REVIEW,
   HOLIDAY,
   HOME,
-  PROGRAMS,
-  VOLUNTEER
+  VOLUNTEER,
+  DEPARTMENTS,
+  FAQS,
+  SIGN_IN,
+  DONATE
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -30,51 +30,33 @@ const navButtons = [
     label: 'Get Involved',
     dropdownLinks: [
       {
-        label: 'Activity',
-        className: 'dropdown-left ',
-        dropdownLinks: [
-          {
-            to: EVENTS,
-            label: 'Events'
-          },
-          {
-            to: PROGRAMS,
-            label: 'Programs'
-          },
-          {
-            to: HOLIDAY,
-            label: 'Holiday'
-          }
-        ]
-      },
-      {
-        to: FUNDRAISE,
-        label: 'Fundraise'
-      },
-      {
-        to: GIVE_US_A_REVIEW,
-        label: 'Give us a review'
+        to: DONATE,
+        label: 'Donate'
       },
       {
         to: VOLUNTEER,
         label: 'Volunteer'
       },
       {
-        to: BECOME_A_PATRON,
-        label: 'Become a Patron'
+        to: EVENTS,
+        label: 'Events'
+      },
+      {
+        to: HOLIDAY,
+        label: 'Holidays'
       }
     ]
   },
   {
-    to: '/departments',
+    to: DEPARTMENTS,
     label: 'Departments'
   },
   {
-    to: '/faq',
-    label: "FAQ's"
+    to: FAQS,
+    label: 'FAQs'
   },
   {
-    to: '/sign_in',
+    to: SIGN_IN,
     label: 'Sign in / Create Account',
     signIn: true
   }
@@ -107,10 +89,10 @@ export default function NavBar() {
   );
 
   return (
-    <nav className="bg-base-100 drop-shadow-lg sticky -top-1">
+    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate">
       <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
         <div className="flex items-center mr-auto w-full md:w-auto">
-          <img role="presentation" src={usafLogo} className="w-16 md:w-20 mr-auto" />
+          <img role="presentation" src={usafLogo} className="w-12 h-12 md:w-20 md:h-20 mr-auto" />
 
           <span className="md:hidden">
             <Divide toggle={setOpened} toggled={opened} />
@@ -119,7 +101,7 @@ export default function NavBar() {
 
         {/* Mobile view */}
         <div
-          className={clsx('flex flex-col gap-1 md:hidden mx-auto', {
+          className={clsx('grid gap-1 md:hidden mx-auto px-8', {
             'invisible h-0 mt-0': !opened,
             'mt-8 mb-3': opened
           })}
@@ -127,8 +109,8 @@ export default function NavBar() {
           {buttonList}
         </div>
 
-        {/* Destop view */}
-        <div className={clsx('hidden md:flex gap-1')}>{buttonList}</div>
+        {/* Tablet and Destop view */}
+        <div className={clsx('hidden md:grid grid-flow-col gap-1')}>{buttonList}</div>
       </div>
     </nav>
   );
