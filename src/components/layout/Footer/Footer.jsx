@@ -100,7 +100,7 @@ export default function Footer() {
             5900 Balcones Drive STE 100 Austin, TX 78731, Austin, Texas, United States of America
           </span>
           <div className="flex gap-2 flex-wrap">
-            <SocialGroupButton className="btn-xs sm:btn-sm" />
+            <SocialGroupButton className="btn-xs btn-ghost sm:btn-sm md:btn-md" />
           </div>
         </div>
       </footer>
