@@ -31,7 +31,7 @@ const navButtons = [
     dropdownLinks: [
       {
         label: 'Activity',
-        className: 'dropdown-left ',
+        className: 'sm:dropdown-left',
         dropdownLinks: [
           {
             to: EVENTS,
@@ -107,10 +107,10 @@ export default function NavBar() {
   );
 
   return (
-    <nav className="bg-base-100 drop-shadow-lg sticky -top-1">
+    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate">
       <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
         <div className="flex items-center mr-auto w-full md:w-auto">
-          <img role="presentation" src={usafLogo} className="w-16 md:w-20 mr-auto" />
+          <img role="presentation" src={usafLogo} className="w-12 h-12 md:w-20 md:h-20 mr-auto" />
 
           <span className="md:hidden">
             <Divide toggle={setOpened} toggled={opened} />
@@ -119,7 +119,7 @@ export default function NavBar() {
 
         {/* Mobile view */}
         <div
-          className={clsx('flex flex-col gap-1 md:hidden mx-auto', {
+          className={clsx('grid gap-1 md:hidden mx-auto px-8', {
             'invisible h-0 mt-0': !opened,
             'mt-8 mb-3': opened
           })}
@@ -127,8 +127,8 @@ export default function NavBar() {
           {buttonList}
         </div>
 
-        {/* Destop view */}
-        <div className={clsx('hidden md:flex gap-1')}>{buttonList}</div>
+        {/* Tablet and Destop view */}
+        <div className={clsx('hidden md:grid grid-flow-col gap-1')}>{buttonList}</div>
       </div>
     </nav>
   );

@@ -9,5 +9,13 @@ export const FUNDRAISE = '/fundraise';
 export const GIVE_US_A_REVIEW = '/give_us_a_review';
 export const VOLUNTEER = '/volunteer';
 export const BECOME_A_PATRON = '/become_a_patron';
+export const DONATE = '/donate';
+export const ONGOING_PROPJECTS = '/ongoing_propjects';
+export const PRIVACY_POLICY = '/privacy_policy';
+export const TERMS_CONDITION = '/terms_condition';
+export const NEWS = '/news';
+export const WORKFORCE = '/workforce';
+export const REVIEWS = '/reviews';
+export const SUBSCRIBE = '/subscribe';
 
 export const LOGIN = '/login';

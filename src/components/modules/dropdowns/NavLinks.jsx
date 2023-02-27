@@ -16,7 +16,7 @@ export default function NavLinks({
   return (
     <div
       role="listbox"
-      className={clsx(['dropdown dropdown-hover w-full isolate group/outer', className])}
+      className={clsx(['dropdown dropdown-hover w-full group/outer', className])}
       {...rest}
     >
       <button

@@ -8,9 +8,9 @@ export default function Page() {
 
       <NavBar />
 
-      <div className="min-h-[80dvh]">
+      <main className="min-h-[50dvh]">
         <Outlet />
-      </div>
+      </main>
 
       <Footer />
     </>

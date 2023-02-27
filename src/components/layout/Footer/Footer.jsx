@@ -1,55 +1,68 @@
 import { usafLogo } from 'assets/icons';
 import clsx from 'clsx';
 import { FooterLink, SocialGroupButton } from 'components/widgets/buttons';
+import {
+  DONATE,
+  EVENTS,
+  FAQS,
+  NEWS,
+  ONGOING_PROPJECTS,
+  PRIVACY_POLICY,
+  PROGRAMS,
+  REVIEWS,
+  SUBSCRIBE,
+  TERMS_CONDITION,
+  WORKFORCE
+} from 'navigation/CONSTANTS';
 import React from 'react';
 
 const contactLinks = [
   {
-    to: '/',
+    to: PROGRAMS,
     label: 'Programs'
   },
   {
-    to: '/',
+    to: DONATE,
     label: 'Donate'
   },
   {
-    to: '/',
+    to: ONGOING_PROPJECTS,
     label: 'Ongoing Projects'
   },
   {
-    to: '/',
-    label: 'Privacy Policy'
-  },
-  {
-    to: '/',
-    label: 'Terms & Condition'
-  },
-  {
-    to: '/',
+    to: NEWS,
     label: 'News'
   },
   {
-    to: '/',
+    to: EVENTS,
     label: 'Events'
   },
   {
-    to: '/',
+    to: WORKFORCE,
     label: 'Workforce'
   }
 ];
 
 const otherLinks = [
   {
-    to: '/',
+    to: FAQS,
     label: 'FAQs'
   },
   {
-    to: '/',
+    to: REVIEWS,
     label: 'Reviews'
   },
   {
-    to: '/',
+    to: SUBSCRIBE,
     label: 'Subscribe'
+  },
+  {
+    to: PRIVACY_POLICY,
+    label: 'Privacy Policy'
+  },
+  {
+    to: TERMS_CONDITION,
+    label: 'Terms & Condition'
   }
 ];
 
@@ -70,9 +83,9 @@ export default function Footer() {
             role="presentation"
             alt="USAF logo"
           />
-          <p className="sm:text-xl font-semibold text-center max-w-xs">
-            The united states of Africa is registered as a Non Profit Corporation in Texas, United
-            States of Africa.
+          <p className="text-lg text-center max-w-xs">
+            The United States of Africa is registered as a Non Profit Corporation in Texas, United
+            States of America.
           </p>
         </div>
 
@@ -96,7 +109,7 @@ export default function Footer() {
 
         <div className="place-items-center lg:place-items-start w-full">
           <span className="footer-title">Contact Us</span>
-          <span className="text-lg">
+          <span className="text-lg text-center lg:text-left">
             5900 Balcones Drive STE 100 Austin, TX 78731, Austin, Texas, United States of America
           </span>
           <div className="flex gap-2 flex-wrap">
