@@ -21,7 +21,7 @@ export default function NavLinks({
     >
       <button
         type="button"
-        className="btn rounded-full normal-case btn-ghost gap-1 flex-nowrap w-full"
+        className={clsx('btn rounded-full normal-case btn-ghost gap-1 flex-nowrap w-full')}
       >
         {startDropdownIcon || null}
         <span>{label}</span>
@@ -58,7 +58,9 @@ export default function NavLinks({
               <li key={label + index} className="items-center min-w-[8rem]">
                 <NavLink
                   to={to}
-                  className="btn-block transform-none whitespace-nowrap justify-center"
+                  className={clsx(
+                    'btn-block transform-none whitespace-nowrap justify-center active:text-primary'
+                  )}
                 >
                   {label || null}
                 </NavLink>

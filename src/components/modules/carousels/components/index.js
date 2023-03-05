@@ -1,1 +1,2 @@
-export { default as CallToActionCarouselItem } from './CallToActionCarouselItem';
+export { default as CarouselItem } from './CarouselItem';
+export { default as Carousel } from './Carousel';

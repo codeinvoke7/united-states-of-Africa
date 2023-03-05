@@ -1,8 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, LinkProps } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 import PropTypes from 'prop-types';
 
-export default function FooterLink({ to, children, isExternalLink, className, ...rest }) {
+export default function FooterLink({
+  to,
+  children,
+  isExternalLink,
+  className,
+  ...rest
+}: LinkProps) {
   const props = {
     className: twMerge('link link-hover', className),
     ...rest
