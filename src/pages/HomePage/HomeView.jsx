@@ -4,7 +4,8 @@ import {
   HeroSection,
   HowToSection,
   MissionSection,
-  NewsSection
+  NewsSection,
+  SubscribeSection
 } from 'components/layout/Home';
 
 function HomeView() {
@@ -16,6 +17,7 @@ function HomeView() {
       <MissionSection />
       <HowToSection />
       <NewsSection />
+      <SubscribeSection />
     </>
   );
 }
