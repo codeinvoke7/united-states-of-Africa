@@ -1,1 +1,1 @@
-export { default as CallToActionCarousel } from './CallToActionCarousel';
+export { default as CallToActionCarousel } from './Hero';

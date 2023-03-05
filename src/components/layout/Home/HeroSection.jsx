@@ -1,6 +1,6 @@
 import { CallToActionCarousel } from 'components/modules/carousels';
 
-export default function CtaSection() {
+export default function HeroSection() {
   return (
     <section>
       <CallToActionCarousel />

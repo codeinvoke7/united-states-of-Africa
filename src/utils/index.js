@@ -2,3 +2,4 @@
 export { default as setAuthToken } from './setAuthToken';
 export { fetchCount as default } from './counterAPI';
 export * as tailwind from './tailwind';
+export { clsxm } from './clsxm';

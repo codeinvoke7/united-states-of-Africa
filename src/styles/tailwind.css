@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 /* prettier-ignore-start */
-nav .btn[aria-current='page'].active,
-nav [role='listbox'].dropdown:has(ul a.active) .btn,
-nav [role='listbox'].dropdown li:has(a[aria-current='page'].active) > * {
+nav [role='listbox'].dropdown:has([aria-current='page'].active) > :nth-child(1),
+nav [aria-current='page'].active,
+nav [role='listbox'].dropdown .active {
     @apply text-primary;
 }
 
 nav [role='listbox'].dropdown li > * {
-    @apply btn-ghost
+    @apply btn btn-ghost normal-case
 }
 
 nav .dropdown.dropdown-hover:hover .dropdown-content {
@@ -24,5 +24,9 @@ nav .dropdown.dropdown-hover :focus ~ .dropdown-content {
 
 .bg-neutral > .footer .footer-title {
     @apply text-neutral-content;
+}
+
+.footer .footer-title {
+    @apply opacity-100 text-opacity-0 font-extrabold
 }
 /* prettier-ignore-end */

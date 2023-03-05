@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['roboto', 'sans-serif'],
-      serif: ['spectral', 'serif']
+      serif: ['Spectral', 'Georgia', 'Times New Roman', 'Times', 'serif'],
+      sans: ['roboto', 'sans-serif']
     },
     colors: {
       transparent: 'transparent',
