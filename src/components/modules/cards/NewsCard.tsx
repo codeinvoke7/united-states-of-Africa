@@ -14,7 +14,7 @@ export type NewsCardProps = PropTypes.InferProps<typeof propTypes>;
 
 export default function NewsCard({ image, url, title, publicationDate }: NewsCardProps) {
   return (
-    <div className="card">
+    <div className="card card-compact">
       <picture>
         <img src={image} className="aspect-square w-full h-full" />
       </picture>
