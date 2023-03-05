@@ -1,20 +1,30 @@
 import { news1, news2, news3, news4 } from 'assets/images';
 import { NewsCard, NewsCardProps } from 'components/modules/cards';
 import React from 'react';
+import { RxCaretLeft, RxCaretRight } from 'react-icons/rx';
 
 export default function NewsSection() {
   return (
-    <section className="mx-auto my-16 max-w-xl">
+    <section className="mx-auto my-16 max-w-xl p-5">
       <h2 className="text-center font-serif text-5xl mb-4 font-bold">Check Our Latest News</h2>
 
-      <div className="carousel gap-8">
+      <div className="carousel gap-2">
         {newsData.map((data, index) => {
           return (
-            <div className="carousel-item max-w-[25rem]">
+            <div className="carousel-item sm:w-1/2 md:w-1/3 lg:w-1/4">
               <NewsCard key={data.title + index} {...data} />
             </div>
           );
         })}
+      </div>
+      <div className="flex justify-end gap-8">
+        <button className="btn btn-circle bg-opacity-30 text-base-100">
+          <RxCaretLeft className="w-7 h-7" />
+        </button>
+
+        <button className="btn btn-circle bg-opacity-30 text-base-100">
+          <RxCaretRight className="w-7 h-7" />
+        </button>
       </div>
     </section>
   );
