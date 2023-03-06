@@ -5,6 +5,7 @@ import {
   HowToSection,
   MissionSection,
   NewsSection,
+  SubscribeSection,
   TeamsSection,
   WhatWeDoSection
 } from 'components/layout/Home';
@@ -20,6 +21,7 @@ function HomeView() {
       <HowToSection />
       <NewsSection />
       <TeamsSection />
+      <SubscribeSection />
     </>
   );
 }
