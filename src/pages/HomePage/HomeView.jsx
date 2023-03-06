@@ -1,21 +1,25 @@
 import {
   AboutSection,
   GetInvolvedSection,
-  HeroSection,
+  // HeroSection,
   HowToSection,
   MissionSection,
-  NewsSection
+  NewsSection,
+  TeamsSection,
+  WhatWeDoSection
 } from 'components/layout/Home';
 
 function HomeView() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <GetInvolvedSection />
       <AboutSection />
       <MissionSection />
+      <WhatWeDoSection />
       <HowToSection />
       <NewsSection />
+      <TeamsSection />
     </>
   );
 }

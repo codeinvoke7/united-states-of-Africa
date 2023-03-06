@@ -23,7 +23,7 @@ export default function GetInvolvedCard({
   return (
     <div className="card bg-base-100 shadow-md">
       <figure>
-        <img src={icon} className="w-16 h-16 mx-auto" />
+        <img loading="lazy" src={icon} className="w-16 h-16 mx-auto mt-4" />
       </figure>
       <div className="card-body">
         <h3 className="card-title mx-auto">{title}</h3>

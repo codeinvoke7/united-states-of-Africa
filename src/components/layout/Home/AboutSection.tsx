@@ -26,25 +26,18 @@ export default function AboutSection() {
           rerum!
         </p>
         <div className="flex gap-4 my-6 flex-wrap">
-          {buttonsData.map(({ label, to, color = 'default' }, index) => {
-            return (
-              <Link
-                to={to}
-                key={label + index}
-                className={clsx('btn gap-2 rounded-full px-6 normal-case', {
-                  'btn-accent': color === 'accent',
-                  '': color === 'default'
-                })}
-              >
-                {label}
-                <RxCaretRight className="w-6 h-6" />
-              </Link>
-            );
-          })}
+          <Link to={DONATE} className="btn rounded-full px-6 gap-2 normal-case">
+            Donate now
+            <RxCaretRight className="w-6 h-6" />
+          </Link>
+          <Link to={ABOUT} className="btn btn-accent rounded-full px-6 gap-2 normal-case">
+            More About Us
+            <RxCaretRight className="w-6 h-6" />
+          </Link>
         </div>
       </div>
 
-      <div className="place-self-center relative max-w-[24rem] min-w-[20rem]">
+      <div className="place-self-center relative max-w-[24rem]">
         <img src={videoPlaceholder} className="aspect-square w-full h-full" />
         <MdPlayCircleOutline
           className={clsx(
@@ -57,21 +50,3 @@ export default function AboutSection() {
     </section>
   );
 }
-
-type ButtonProps = {
-  label: string;
-  to: string;
-  color?: 'accent' | 'default';
-};
-
-const buttonsData: ButtonProps[] = [
-  {
-    label: 'Donate now',
-    to: DONATE
-  },
-  {
-    label: 'More About Us',
-    to: ABOUT,
-    color: 'accent'
-  }
-];

@@ -11,8 +11,11 @@ export default function NewsSection() {
       <div className="carousel gap-2">
         {newsData.map((data, index) => {
           return (
-            <div className="carousel-item sm:w-1/2 md:w-1/3 lg:w-1/4">
-              <NewsCard key={data.title + index} {...data} />
+            <div
+              key={data.title + index}
+              className="carousel-item w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+            >
+              <NewsCard {...data} />
             </div>
           );
         })}

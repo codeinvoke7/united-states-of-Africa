@@ -8,6 +8,7 @@ export const HOLIDAY = '/holiday';
 export const FUNDRAISE = '/fundraise';
 export const GIVE_US_A_REVIEW = '/give_us_a_review';
 export const VOLUNTEER = '/volunteer';
+export const VOLUNTEERS = '/volunteers';
 export const DONATE = '/donate';
 export const ONGOING_PROPJECTS = '/ongoing_propjects';
 export const PRIVACY_POLICY = '/privacy_policy';
