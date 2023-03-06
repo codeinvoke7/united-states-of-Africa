@@ -16,7 +16,7 @@ export default function NewsCard({ image, url, title, publicationDate }: NewsCar
   return (
     <div className="card card-compact">
       <picture>
-        <img src={image} className="aspect-square w-full h-full" />
+        <img loading="lazy" src={image} className="aspect-square w-full h-full" />
       </picture>
       <div className="card-body">
         <time>{publicationDate}</time>

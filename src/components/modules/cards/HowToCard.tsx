@@ -16,8 +16,8 @@ export type HowToCardProps = PropTypes.InferProps<typeof propTypes>;
 export default function HowToCard({ icon, title, description, buttonLabel, url }: HowToCardProps) {
   return (
     <div className="card card-side bg-transparent">
-      <figure className="w-24 h-24 rounded-full border-2 border-secondary p-4 aspect-square object-cover place-self-center">
-        <img role="presentation" className="" src={icon} />
+      <figure className="w-16 h-16 rounded-full border-2 border-secondary p-4 place-self-center flex-shrink-0">
+        <img loading="lazy" role="presentation" src={icon} />
       </figure>
       <div className="card-body">
         <h3 className="card-title">{title}</h3>

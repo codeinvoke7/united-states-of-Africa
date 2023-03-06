@@ -18,3 +18,8 @@ export const member = `${SVG_PATH}/member.svg`;
 export const confirmation = `${SVG_PATH}/confirmation.svg`;
 export const enjoy = `${SVG_PATH}/enjoy.svg`;
 export const position = `${SVG_PATH}/position.svg`;
+
+export const education = `${SVG_PATH}/education.svg`;
+export const humanRights = `${SVG_PATH}/human_rights.svg`;
+export const mentalHealth = `${SVG_PATH}/mental_health.svg`;
+export const technologieInovation = `${SVG_PATH}/technologie_inovation.svg`;

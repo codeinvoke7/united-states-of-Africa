@@ -7,6 +7,7 @@ export default function MissionSection() {
     <section className="relative overflow-hidden my-16 bg-neutral-600">
       <img
         role="presentation"
+        loading="lazy"
         src={missionBackground}
         className="absolute w-full aspect-video object-cover  mix-blend-luminosity"
       />

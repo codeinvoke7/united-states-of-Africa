@@ -31,11 +31,17 @@ export default function NavBar() {
               dropdownLinks={[...dropdownLinks]}
               className="dropdown-center"
               defaultIcon
+              handleClick={() => setOpened(false)}
             />
           );
 
         return (
-          <NavLinkButton key={label + index} to={to} isAcccent={signIn}>
+          <NavLinkButton
+            key={label + index}
+            to={to}
+            isAcccent={signIn}
+            onClick={() => setOpened(false)}
+          >
             {label}
           </NavLinkButton>
         );
@@ -61,7 +67,7 @@ export default function NavBar() {
         {/* Mobile view */}
         <div
           className={clsx('grid gap-1 md:hidden mx-auto px-8', {
-            'invisible h-0 mt-0': !opened,
+            'hidden h-0 mt-0': !opened,
             'mt-8 mb-3': opened
           })}
         >

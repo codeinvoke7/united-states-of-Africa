@@ -10,11 +10,11 @@ export default function HowToSection() {
           To Have Become A Volunteer Or Donor
         </h2>
 
-        <div className="grid lg:grid-cols-3">
+        <div className="grid lg:grid-cols-3 p-2">
           {howToData.map((data, index) => {
             return (
-              <div className="mx-auto">
-                <HowToCard key={data.title + index} {...data} />
+              <div key={data.title + index} className="mx-auto">
+                <HowToCard {...data} />
               </div>
             );
           })}

@@ -1,9 +1,11 @@
+import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { NavLink as Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
+import { LinkProps } from 'react-router-dom';
 
-export default function NavLink({ to, className, isAcccent, children, ...rest }) {
+export default function NavLink({ to, className, isAcccent, children, ...rest }: NavLinkProps) {
   return (
     <Link
       className={twMerge(
@@ -21,9 +23,13 @@ export default function NavLink({ to, className, isAcccent, children, ...rest })
   );
 }
 
-NavLink.propTypes = {
+const propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   isAcccent: PropTypes.bool,
   to: PropTypes.string.isRequired
 };
+
+type NavLinkProps = PropTypes.InferProps<typeof propTypes> & LinkProps;
+
+NavLink.propTypes = propTypes;
