@@ -1,7 +1,7 @@
 import {
   AboutSection,
   GetInvolvedSection,
-  HeroSection,
+  // HeroSection,
   HowToSection,
   MissionSection,
   NewsSection,
@@ -12,7 +12,7 @@ import {
 function HomeView() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <GetInvolvedSection />
       <AboutSection />
       <MissionSection />

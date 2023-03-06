@@ -11,7 +11,7 @@ export default function TeamsSection() {
       <h2 className="text-lg text-primary text-center">Meet Our Team</h2>
       <p className="text-5xl font-bold font-serif text-center my-6">Talented Team Behind USAF</p>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {teamMembers.map((data, index) => {
           return <TeamMemberCard key={data.name + index + data.role} {...data} />;
         })}
