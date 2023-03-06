@@ -5,7 +5,7 @@ import {
   HowToSection,
   MissionSection,
   NewsSection,
-  SubscribeSection
+  SubscribeSection,
   TeamsSection,
   WhatWeDoSection
 } from 'components/layout/Home';
