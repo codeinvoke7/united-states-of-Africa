@@ -20,4 +20,7 @@ export const SUBSCRIBE = '/subscribe';
 export const LOGIN = '/login';
 export const SIGN_IN = '/sign_in';
 
+export const CAREERS = '/Careers';
+export const CONTACT_US = '/Contact_us';
+
 export const SUBSCRIBE_AS_PATRON = 'https://www.patreon.com/USAfrikagov/';

@@ -12,7 +12,10 @@ import {
   DEPARTMENTS,
   FAQS,
   SIGN_IN,
-  DONATE
+  DONATE,
+  WORKFORCE,
+  CAREERS,
+  CONTACT_US
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -28,6 +31,7 @@ export default function NavBar() {
             <NavLinksDropdown
               key={label + index}
               label={label}
+              to={to}
               dropdownLinks={[...dropdownLinks]}
               className="dropdown-center"
               defaultIcon
@@ -88,7 +92,21 @@ const navButtons = [
   },
   {
     to: ABOUT,
-    label: 'About US'
+    label: 'About Us',
+    dropdownLinks: [
+      {
+        to: WORKFORCE,
+        label: 'Workforce'
+      },
+      {
+        to: CAREERS,
+        label: 'Careers'
+      },
+      {
+        to: CONTACT_US,
+        label: 'Contact Us'
+      }
+    ]
   },
   {
     label: 'Get Involved',
