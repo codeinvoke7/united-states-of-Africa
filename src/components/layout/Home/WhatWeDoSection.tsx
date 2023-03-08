@@ -8,7 +8,7 @@ import { humanRights, mentalHealth, technologieInovation } from 'assets/icons';
 export default function WhatWeDoSection() {
   return (
     <section className="grid lg:grid-cols-2 max-w-xl mx-auto my-16 gap-4 p-4">
-      <div className="grid sm:grid-cols-2 gap-4 order-2 sm:order-1">
+      <div className="grid sm:grid-cols-2 gap-2 order-2 sm:order-1 px-6">
         {whatWeDoData.map((data, index) => {
           return <WhatWeDoCard key={data.title + index} {...data} />;
         })}

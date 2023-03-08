@@ -50,7 +50,7 @@ export default function NavBar() {
   );
 
   return (
-    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate z-50">
+    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate z-40">
       <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
         <div className="flex items-center mr-auto w-full md:w-auto">
           <img

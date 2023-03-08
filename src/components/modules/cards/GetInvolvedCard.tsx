@@ -21,7 +21,7 @@ export default function GetInvolvedCard({
   link
 }: GetInvolvedCardProps) {
   return (
-    <div className="card bg-base-100 shadow-md">
+    <div className="card bg-base-100 shadow-md border-2 border-base-100">
       <figure>
         <img loading="lazy" src={icon} className="w-16 h-16 mx-auto mt-4" />
       </figure>
