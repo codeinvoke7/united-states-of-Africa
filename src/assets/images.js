@@ -8,3 +8,7 @@ export const news1 = `${IMAGES_PATH}/news_1.png`;
 export const news2 = `${IMAGES_PATH}/news_2.png`;
 export const news3 = `${IMAGES_PATH}/news_3.png`;
 export const news4 = `${IMAGES_PATH}/news_4.png`;
+
+export const member1 = `${IMAGES_PATH}/member1.png`;
+export const member2 = `${IMAGES_PATH}/member2.png`;
+export const member3 = `${IMAGES_PATH}/member3.png`;

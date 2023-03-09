@@ -23,6 +23,10 @@ export const SIGN_IN = '/sign_in';
 export const CAREERS = '/Careers';
 export const CONTACT_US = '/Contact_us';
 
+export const MISSION = '/mission';
+export const VISION = '/vision';
+export const GOAL = '/goal';
+
 export const SUBSCRIBE_AS_PATRON = 'https://www.patreon.com/USAfrikagov/';
 
 // Social links

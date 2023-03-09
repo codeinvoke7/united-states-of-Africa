@@ -39,8 +39,7 @@ const cardsData: GetInvolvedCardProps[] = [
   },
   {
     title: 'Join As A member',
-    description:
-      'The United States of Africa advocates for the interests of every man, woman, boy child; it’s a vision so compelling both to the old and young people of African descent worldwide.',
+    description: 'Join us and help create the Africa we want. Become a supporter today!',
     link: SUBSCRIBE_AS_PATRON,
     icon: member,
     buttonLabel: 'Be Member'
