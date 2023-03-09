@@ -1,6 +1,6 @@
 import { donation, fundraiser, member, volunteer } from 'assets/icons';
 import { WhatWeDoCardProps, GetInvolvedCard, GetInvolvedCardProps } from 'components/modules/cards';
-import { DONATE, FUNDRAISE, VOLUNTEER, SIGN_IN } from 'navigation/CONSTANTS';
+import { DONATE, FUNDRAISE, VOLUNTEER, SIGN_IN, SUBSCRIBE_AS_PATRON } from 'navigation/CONSTANTS';
 import React from 'react';
 
 export default function GetInvolvedSection() {
@@ -41,7 +41,7 @@ const cardsData: GetInvolvedCardProps[] = [
     title: 'Join As A member',
     description:
       'The United States of Africa advocates for the interests of every man, woman, boy child; it’s a vision so compelling both to the old and young people of African descent worldwide.',
-    link: SIGN_IN,
+    link: SUBSCRIBE_AS_PATRON,
     icon: member,
     buttonLabel: 'Be Member'
   }
