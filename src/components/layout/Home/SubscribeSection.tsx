@@ -41,7 +41,7 @@ export default function SubscribeSection() {
               <Link
                 to={to}
                 key={label + index}
-                className={clsx('btn gap-2 rounded-full px-6 normal-case z-40', {
+                className={clsx('btn gap-2 rounded-full px-6 normal-case)', {
                   'btn-accent': color === 'default'
                 })}
               >
