@@ -8,7 +8,7 @@ import { humanRights, mentalHealth, technologieInovation } from 'assets/icons';
 export default function WhatWeDoSection() {
   return (
     <section className="grid lg:grid-cols-2 max-w-xl mx-auto my-16 gap-4 p-4">
-      <div className="grid sm:grid-cols-2 gap-2 order-2 sm:order-1 px-6">
+      <div className="grid sm:grid-cols-2 gap-4 order-2 sm:order-1 px-6">
         {whatWeDoData.map((data, index) => {
           return <WhatWeDoCard key={data.title + index} {...data} />;
         })}
@@ -17,12 +17,12 @@ export default function WhatWeDoSection() {
       <div className="card card-compact my-auto order-1 sm:order-2">
         <div className="card-body">
           <h2 className="text-primary text-lg">What We Do</h2>
-          <h3 className="text-5xl font-serif font-bold my-2">A Mission To Solve A Problem</h3>
+          <h3 className="text-5xl font-serif font-bold my-2">Uniting Africa through Innovation</h3>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe unde distinctio
-            molestiae doloribus voluptatum labore id, provident odio, esse enim nesciunt rerum aut
-            quo consectetur harum pariatur architecto nulla! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum.
+            Explore our innovative approach to addressing technological equity and promoting African
+            leaps into Artificial Intelligence, Machine Learning, and Natural Language Processing
+            powered volunteerism spirit. Empowering Africans to take charge of their destiny. learn
+            more about what we do at the United States of Africa
           </p>
 
           <div className="card-actions gap-4 mt-8">
@@ -44,26 +44,22 @@ export default function WhatWeDoSection() {
 const whatWeDoData: WhatWeDoCardProps[] = [
   {
     title: 'Technology & Innovations',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus possimus ea similique nemo, voluptates ipsam quasi itaque eveniet illum.',
+    description: 'Revolutionizing Africa through technology and innovation.',
     icon: technologieInovation
   },
   {
     title: 'Human Rights',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus possimus ea similique nemo, voluptates ipsam quasi itaque eveniet illum.',
+    description: 'Empowering human rights for all Africans.',
     icon: humanRights
   },
   {
     title: 'Mental Health',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus possimus ea similique nemo, voluptates ipsam quasi itaque eveniet illum.',
+    description: 'Black Mental Health Matters: Eradicating stigma in African communities.',
     icon: mentalHealth
   },
   {
     title: 'Afrocentric Education',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus possimus ea similique nemo, voluptates ipsam quasi itaque eveniet illum.',
+    description: 'Education for us, by us: Building a stronger African future.',
     icon: technologieInovation
   }
 ];

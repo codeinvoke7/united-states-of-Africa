@@ -7,12 +7,16 @@ export default function HowToSection() {
     <section className="bg-neutral text-neutral-content">
       <div className="max-w-xl py-16 mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center font-serif">
-          To Have Become A Volunteer Or Donor
+          Ready to make a difference ? <br /> Join us as a volunteer or donor today !
         </h2>
 
         <div className="flex px-6 mx-auto justify-center items-center flex-col md:flex-row">
           {howToData.map((data, index) => {
-            return <HowToCard key={data.title + index} {...data} />;
+            return (
+              <div key={data.title + index} className="w-1/3 grid place-content-center">
+                <HowToCard {...data} />
+              </div>
+            );
           })}
         </div>
       </div>
@@ -22,22 +26,22 @@ export default function HowToSection() {
 
 const howToData: HowToCardProps[] = [
   {
-    buttonLabel: 'Give Request',
-    description: 'Lorem ipsum dolor sit amet consectetur.',
-    title: 'Select Position',
+    buttonLabel: 'Send your gift',
+    description: 'Volunteer with us or become a donor today.',
+    title: 'Apply',
     url: '',
     icon: position
   },
   {
-    buttonLabel: 'Get Reaction',
-    description: 'Lorem ipsum dolor sit amet consectetur.',
+    buttonLabel: 'Make a difference',
+    description: 'Receive confirmation within 24 hours.',
     title: 'Get Confirmation',
     url: '',
     icon: confirmation
   },
   {
-    buttonLabel: 'Enjoy Now',
-    description: 'Lorem ipsum dolor sit amet consectetur.',
+    buttonLabel: 'Take Action',
+    description: 'Join us, Make difference.',
     title: 'Get Enjoyed',
     url: '',
     icon: enjoy
