@@ -12,7 +12,10 @@ import {
   DEPARTMENTS,
   FAQS,
   SIGN_IN,
-  DONATE
+  DONATE,
+  WORKFORCE,
+  CAREERS,
+  CONTACT_US
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -28,14 +31,21 @@ export default function NavBar() {
             <NavLinksDropdown
               key={label + index}
               label={label}
+              to={to}
               dropdownLinks={[...dropdownLinks]}
               className="dropdown-center"
               defaultIcon
+              handleClick={() => setOpened(false)}
             />
           );
 
         return (
-          <NavLinkButton key={label + index} to={to} isAcccent={signIn}>
+          <NavLinkButton
+            key={label + index}
+            to={to}
+            isAcccent={signIn}
+            onClick={() => setOpened(false)}
+          >
             {label}
           </NavLinkButton>
         );
@@ -44,7 +54,7 @@ export default function NavBar() {
   );
 
   return (
-    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate z-50">
+    <nav className="bg-base-100 drop-shadow-lg sticky -top-1 isolate z-40">
       <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
         <div className="flex items-center mr-auto w-full md:w-auto">
           <img
@@ -61,7 +71,7 @@ export default function NavBar() {
         {/* Mobile view */}
         <div
           className={clsx('grid gap-1 md:hidden mx-auto px-8', {
-            'invisible h-0 mt-0': !opened,
+            'hidden h-0 mt-0': !opened,
             'mt-8 mb-3': opened
           })}
         >
@@ -82,7 +92,21 @@ const navButtons = [
   },
   {
     to: ABOUT,
-    label: 'About US'
+    label: 'About Us',
+    dropdownLinks: [
+      {
+        to: WORKFORCE,
+        label: 'Workforce'
+      },
+      {
+        to: CAREERS,
+        label: 'Careers'
+      },
+      {
+        to: CONTACT_US,
+        label: 'Contact Us'
+      }
+    ]
   },
   {
     label: 'Get Involved',

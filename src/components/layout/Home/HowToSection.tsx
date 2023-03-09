@@ -10,13 +10,9 @@ export default function HowToSection() {
           To Have Become A Volunteer Or Donor
         </h2>
 
-        <div className="grid lg:grid-cols-3">
+        <div className="flex px-6 mx-auto justify-center items-center flex-col md:flex-row">
           {howToData.map((data, index) => {
-            return (
-              <div className="mx-auto">
-                <HowToCard key={data.title + index} {...data} />
-              </div>
-            );
+            return <HowToCard key={data.title + index} {...data} />;
           })}
         </div>
       </div>

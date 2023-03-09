@@ -5,3 +5,5 @@ export { default as MissionSection } from './MissionSection';
 export { default as HowToSection } from './HowToSection';
 export { default as NewsSection } from './NewsSection';
 export { default as SubscribeSection } from './SubscribeSection';
+export { default as WhatWeDoSection } from './WhatWeDoSection';
+export { default as TeamsSection } from './TeamsSection';
