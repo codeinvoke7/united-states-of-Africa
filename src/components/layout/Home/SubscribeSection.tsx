@@ -6,10 +6,10 @@ import { subscribeBackground } from 'assets/images';
 import { SUBSCRIBE } from 'navigation/CONSTANTS';
 
 export default function SubscribeSection() {
-  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setName('');
+    setEmail('');
   };
 
   return (
@@ -34,8 +34,8 @@ export default function SubscribeSection() {
               className="w-[22rem] p-5 lg:w-[50rem] lg:p-5 lg:rounded border-transparent focus:ring-0"
               id="email"
               placeholder="Enter your email"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
         </form>
