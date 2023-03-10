@@ -31,7 +31,7 @@ export default function SubscribeSection() {
           <div className="flex flex-row items-center mx-auto">
             <input
               type="email"
-              className="w-[22rem] p-5 lg:w-[50rem] lg:h-[3.875rem] lg:rounded border-transparent focus:ring-0"
+              className="w-[22rem] p-5 lg:w-[50rem] lg:p-5 lg:rounded border-transparent focus:ring-0"
               id="email"
               placeholder="Enter your email"
               value={name}
