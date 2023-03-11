@@ -5,7 +5,7 @@ const Radio = ({ name, id, value, onChange, checked }) => {
     <div>
       <label htmlFor={id} className="opacity-90">
         <input
-          className="radio text-primary bg-transparent border-2 border-primary focus:ring-2 ring-primary w-4 h-4 ml-4 mb-2 focus:ring-primary focus:ring-offset-primary-200 focus:outline-none checked:bg-primary checked:border-none"
+          className="radio text-primary bg-transparent border-2 border-primary focus:ring-2 ring-primary w-5 h-5 ml-4 mb-2 focus:ring-primary focus:ring-offset-primary-200 focus:outline-none checked:bg-primary checked:border-none"
           type="radio"
           name={name}
           id={id}

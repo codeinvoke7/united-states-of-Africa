@@ -4,7 +4,6 @@ import { NavLinksDropdown } from 'components/modules/dropdowns';
 import { NavLinkButton } from 'components/widgets/buttons';
 import { Divide } from 'hamburger-react';
 import {
-  ABOUT,
   EVENTS,
   HOLIDAY,
   HOME,
@@ -31,7 +30,6 @@ export default function NavBar() {
             <NavLinksDropdown
               key={label + index}
               label={label}
-              to={to}
               dropdownLinks={[...dropdownLinks]}
               className="dropdown-center"
               defaultIcon
@@ -91,7 +89,6 @@ const navButtons = [
     label: 'Home'
   },
   {
-    to: ABOUT,
     label: 'About Us',
     dropdownLinks: [
       {

@@ -6,7 +6,7 @@ import { AiOutlinePlus } from 'react-icons/ai';
 const propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node,
   buttonLabel: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 };
@@ -25,7 +25,7 @@ export default function HowToCard({ icon, title, description, buttonLabel, url }
         <div className="card-action">
           <Link
             to={url}
-            className="btn btn-outline btn-secondary rounded-full px-4 normal-case gap-2"
+            className="btn btn-outline btn-secondary flex-nowrap rounded-full px-4 normal-case gap-2"
           >
             {buttonLabel} <AiOutlinePlus className="w-5 h-5" />
           </Link>

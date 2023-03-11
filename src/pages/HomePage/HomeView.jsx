@@ -10,6 +10,7 @@ import {
   WhatWeDoSection,
   EventsSection
 } from 'components/layout/Home';
+import { TabProvider } from 'components/modules/tabs';
 
 function HomeView() {
   return (
@@ -17,7 +18,11 @@ function HomeView() {
       {/* <HeroSection /> */}
       <GetInvolvedSection />
       <AboutSection />
-      <MissionSection />
+
+      <TabProvider>
+        <MissionSection />
+      </TabProvider>
+
       <WhatWeDoSection />
       <HowToSection />
       <NewsSection />

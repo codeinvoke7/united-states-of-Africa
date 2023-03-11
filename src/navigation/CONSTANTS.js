@@ -23,4 +23,15 @@ export const SIGN_IN = '/sign_in';
 export const CAREERS = '/Careers';
 export const CONTACT_US = '/Contact_us';
 
+export const MISSION = '/mission';
+export const VISION = '/vision';
+export const GOAL = '/goal';
+
 export const SUBSCRIBE_AS_PATRON = 'https://www.patreon.com/USAfrikagov/';
+
+// Social links
+export const FACEBOOK = 'https://www.facebook.com/USAfrika.gov/';
+export const TWITTER = 'https://twitter.com/Alkebulan_';
+export const INSTAGRAM = 'https://www.instagram.com/usafrikagov/';
+export const YOUTUBE = 'https://www.youtube.com/channel/UCjStonm3Fy5-c0TVFT_T6BQ/';
+export const LINKEDIN = 'https://www.linkedin.com/company/united-states-of-africa/';
