@@ -7,7 +7,8 @@ import {
   NewsSection,
   SubscribeSection,
   TeamsSection,
-  WhatWeDoSection
+  WhatWeDoSection,
+  EventsSection
 } from 'components/layout/Home';
 
 function HomeView() {
@@ -21,6 +22,7 @@ function HomeView() {
       <HowToSection />
       <NewsSection />
       <TeamsSection />
+      <EventsSection />
       <SubscribeSection />
     </>
   );

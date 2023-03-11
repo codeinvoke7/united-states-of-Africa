@@ -8,6 +8,7 @@ export { default as WhatsappButton } from './Whatsapp';
 export { default as InstagramButton } from './Instagram';
 export { default as TwitterButton } from './Twitter';
 export { default as LinkedinButton } from './Linkedin';
+export { default as RadioButton } from './Radio';
 
 export { default as NavLinkButton } from './NavLink';
 
