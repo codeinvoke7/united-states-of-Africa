@@ -31,7 +31,7 @@ export default function EventsSection() {
             return <EventsCard key={data.title + index} {...data} />;
           })}
         </div>
-        <div className="mx-auto max-w-md flex items-center py-2 justify-center">
+        <div className="mx-auto max-w-md flex items-center py-3 justify-center">
           <RadioButton />
         </div>
       </section>
