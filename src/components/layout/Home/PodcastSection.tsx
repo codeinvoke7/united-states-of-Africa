@@ -89,7 +89,7 @@ const podcasts = [
     id: 4,
     image: rssfeed,
     alt: 'rssfeed image',
-    url: 'https://rssfeed.com'
+    url: 'https://anchor.fm/s/d6faf8bc/rss'
   },
   {
     id: 5,
