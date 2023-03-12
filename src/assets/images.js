@@ -23,6 +23,5 @@ export const anchor = `${IMAGES_PATH}/anchor.png`;
 export const googlepodcast = `${IMAGES_PATH}/googlepodcast.png`;
 export const applepodcast = `${IMAGES_PATH}/applepodcast.png`;
 export const iheartradio = `${IMAGES_PATH}/iheartradio.png`;
-export const radiopublic = `${IMAGES_PATH}/radiopublic.png`;
 export const rssfeed = `${IMAGES_PATH}/rssfeed.png`;
-export const stitcher = `${IMAGES_PATH}/stitcher.png`;
+export const spotify = `${IMAGES_PATH}/spotify.png`;
