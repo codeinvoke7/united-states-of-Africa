@@ -57,7 +57,7 @@ const podcastData: PodcastCardProps[] = [
   {
     image: podcast2,
     title: 'Africa & Technology',
-    description: 'Episode 7'
+    description: 'Episode 5'
   },
   {
     image: podcast3,
