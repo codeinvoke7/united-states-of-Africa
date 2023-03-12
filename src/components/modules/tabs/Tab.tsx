@@ -11,7 +11,7 @@ export default function Tab({ tabs }: TabProps) {
   const context = useContext(TabContext);
 
   return (
-    <div className="overflow-hidden">
+    <div>
       <div className="tabs">
         {tabs.map(({ label }, index) => {
           return (
@@ -19,6 +19,7 @@ export default function Tab({ tabs }: TabProps) {
               className={clsxm('tab text-current tab-bordered border-current transition-colors', {
                 'text-primary border-primary': context?.activeTab === index
               })}
+              key={label + index}
               onClick={() => context?.changeActiveTab(index)}
             >
               {label}
@@ -27,13 +28,14 @@ export default function Tab({ tabs }: TabProps) {
         })}
       </div>
 
-      <div className="py-6">
+      <div className="py-4 relative overflow-hidden">
         {tabs.map(({ content }, index) => {
           return (
             <div
-              className={clsx('transition-all duration-1000', {
-                'hidden opacity-0 translate-x-full': context?.activeTab !== index,
-                'opacity-100 translate-x-0': context?.activeTab === index
+              key={'tabcontent' + index}
+              className={clsx('motion-safe:transition-[bottom,opacity] duration-500 ', {
+                'absolute opacity-0 w-full h-full bottom-full ': context?.activeTab !== index,
+                'relative opacity-100 -bottom-full delay-300': context?.activeTab === index
               })}
               style={{ transform: `translateX()` }}
             >

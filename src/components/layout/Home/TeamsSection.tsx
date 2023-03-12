@@ -44,38 +44,44 @@ const teamMembers: TeamMemberCardProps[] = [
       "As a volunteer UX Researcher at United States of Africa, I've been able to use my creativity and insights to develop user-centered products that meet the needs of our target audience. Being a part of this mission has been inspiring, and collaborating with a talented and dedicated team of people has been a pleasure. The impact of our work is significant, and I'm proud to be a part of it.",
     image: member1,
     name: 'Jerry Toms',
-    role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    role: 'UX Researcher',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
       "As a volunteer Business Analyst at United States of Africa, I've had a fantastic experience using my expertise to identify areas for growth and improvement and provide actionable insights. Collaborating with others and being a part of a mission to make a difference has been fulfilling, and I'm proud of what we've accomplished together.",
     image: member3,
     name: 'David Stones',
-    role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    role: 'Business Analyst',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
       "I've loved volunteering as a Scrum Master at United States of Africa. Leading our agile development process and ensuring that we deliver high-quality products on time and within budget has been incredibly rewarding. The collaborative and positive work environment that we've created has made this experience even more enjoyable, and I'm honored to be a part of this mission.",
     image: member2,
     name: 'Jacky Jonhson',
-    role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    role: 'Scrum Master',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   }
 ];

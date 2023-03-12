@@ -4,7 +4,11 @@ import { twMerge } from 'tailwind-merge';
 
 export default function SocialBase({ className, children, target, href }: SocialLinkProps) {
   return (
-    <a target={target} href={href} className={twMerge('btn btn-square', className)}>
+    <a
+      target={target || '_blank'}
+      href={href || 'https://facebook.com/'}
+      className={twMerge('btn btn-square', className)}
+    >
       {children}
     </a>
   );
@@ -13,8 +17,8 @@ export default function SocialBase({ className, children, target, href }: Social
 const propTypes = {
   className: PropTypes.string,
   children: PropTypes.any.isRequired,
-  href: PropTypes.string.isRequired,
-  target: PropTypes.string.isRequired
+  href: PropTypes.string,
+  target: PropTypes.string
 };
 
 export type SocialLinkProps = PropTypes.InferProps<typeof propTypes>;
