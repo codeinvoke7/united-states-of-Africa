@@ -1,7 +1,7 @@
 import {
   AboutSection,
   GetInvolvedSection,
-  // HeroSection,
+  HeroSection,
   HowToSection,
   MissionSection,
   NewsSection,
@@ -14,7 +14,7 @@ import { TabProvider } from 'components/modules/tabs';
 function HomeView() {
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <GetInvolvedSection />
       <AboutSection />
 

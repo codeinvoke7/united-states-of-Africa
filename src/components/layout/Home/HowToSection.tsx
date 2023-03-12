@@ -10,10 +10,10 @@ export default function HowToSection() {
           Ready to make a difference ? <br /> Join us as a volunteer or donor today !
         </h2>
 
-        <div className="flex px-6 mx-auto justify-center items-center flex-col md:flex-row">
+        <div className="flex px-6 mx-auto md:justify-center md:items-center flex-col md:flex-row">
           {howToData.map((data, index) => {
             return (
-              <div key={data.title + index} className="w-1/3 grid place-content-center">
+              <div key={data.title + index} className="md:w-1/3">
                 <HowToCard {...data} />
               </div>
             );

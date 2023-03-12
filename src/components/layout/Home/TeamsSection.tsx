@@ -45,12 +45,14 @@ const teamMembers: TeamMemberCardProps[] = [
     image: member1,
     name: 'Jerry Toms',
     role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
@@ -58,12 +60,14 @@ const teamMembers: TeamMemberCardProps[] = [
     image: member3,
     name: 'David Stones',
     role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
@@ -71,11 +75,13 @@ const teamMembers: TeamMemberCardProps[] = [
     image: member2,
     name: 'Jacky Jonhson',
     role: 'Fronend Developper',
-    socialLinks: [
-      <FacebookButton className={socialMediaClassName} />,
-      <InstagramButton className={socialMediaClassName} />,
-      <LinkedinButton className={socialMediaClassName} />,
-      <TwitterButton className={socialMediaClassName} />
-    ]
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   }
 ];

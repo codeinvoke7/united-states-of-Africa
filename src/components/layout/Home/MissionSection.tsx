@@ -10,12 +10,12 @@ export default function MissionSection() {
   const tabContextValue = useContext(TabContext);
 
   return (
-    <section className="relative overflow-hidden my-16 bg-neutral-600">
+    <section className="relative overflow-hidden my-16 bg-neutral">
       <img
         role="presentation"
         loading="lazy"
         src={missionBackground}
-        className="absolute w-full aspect-video object-cover object-center mix-blend-luminosity"
+        className="absolute w-full object-cover h-full mix-blend-luminosity max-w-xl mx-auto"
       />
       <div className="max-w-xl mx-auto px-6 py-10 my-16">
         <div className="card bg-neutral text-neutral-content mx-auto lg:mx-0 lg:ml-auto max-w-sm">
@@ -35,7 +35,9 @@ export default function MissionSection() {
 const MissionTab = () => {
   return (
     <div>
-      <p>Our mission is to unite African states and people of African descent.</p>
+      <p className="line-clamp-3 h-[3lh]">
+        Our mission is to unite African states and people of African descent.
+      </p>
       <Link to={MISSION} className="btn btn-accent gap-2 mt-6 rounded-full px-4 normal-case">
         Our Mission <RxCaretRight />
       </Link>
@@ -46,7 +48,9 @@ const MissionTab = () => {
 const VisionTab = () => {
   return (
     <div>
-      <p>MissionTab</p>
+      <p className="line-clamp-3 h-[3lh]">
+        United in diversity, building a brighter Africa for all.
+      </p>
       <Link to={VISION} className="btn btn-accent gap-2 mt-6 rounded-full px-4 normal-case">
         Our Vision <RxCaretRight />
       </Link>
@@ -54,12 +58,16 @@ const VisionTab = () => {
   );
 };
 
-const GoalTab = () => {
+const ObjectiveTab = () => {
   return (
     <div>
-      <p>MissionTab</p>
+      <p className="line-clamp-3 h-[3lh]">
+        To establish a political and economiic federation in Africa: The United States of Africa
+        Federation (USAF) for Africans at home or abroad, which would foster unity and cooperation
+        among African nations, and promote economic development and growth accross the globe.
+      </p>
       <Link to={GOAL} className="btn btn-accent gap-2 mt-6 rounded-full px-4 normal-case">
-        Our Goal <RxCaretRight />
+        Our Objectives <RxCaretRight />
       </Link>
     </div>
   );
@@ -68,5 +76,5 @@ const GoalTab = () => {
 const tabsData: TabDataType[] = [
   { label: 'Our Mission', content: <MissionTab /> },
   { label: 'Our Vision', content: <VisionTab /> },
-  { label: 'Our Goal', content: <GoalTab /> }
+  { label: 'Our Objectives', content: <ObjectiveTab /> }
 ];

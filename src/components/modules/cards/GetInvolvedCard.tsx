@@ -29,7 +29,7 @@ export default function GetInvolvedCard({
         <h3 className="card-title mx-auto">{title}</h3>
         <p className="line-clamp-4 text-center">{description}</p>
         <div className="card-actions">
-          <Link className="btn btn-ghost normal-case gap-2 mx-auto" to={link}>
+          <Link className="btn btn-ghost normal-case gap-2 mx-auto text-primary" to={link}>
             {buttonLabel} <AiOutlinePlus />
           </Link>
         </div>
