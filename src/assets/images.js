@@ -18,10 +18,3 @@ export const member3 = `${IMAGES_PATH}/member3.png`;
 export const podcast1 = `${IMAGES_PATH}/podcast1.png`;
 export const podcast2 = `${IMAGES_PATH}/podcast2.png`;
 export const podcast3 = `${IMAGES_PATH}/podcast3.png`;
-
-export const anchor = `${IMAGES_PATH}/anchor.png`;
-export const googlepodcast = `${IMAGES_PATH}/googlepodcast.png`;
-export const applepodcast = `${IMAGES_PATH}/applepodcast.png`;
-export const iheartradio = `${IMAGES_PATH}/iheartradio.png`;
-export const rssfeed = `${IMAGES_PATH}/rssfeed.png`;
-export const spotify = `${IMAGES_PATH}/spotify.png`;

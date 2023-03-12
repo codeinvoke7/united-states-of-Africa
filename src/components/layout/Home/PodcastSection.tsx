@@ -1,16 +1,7 @@
 import React from 'react';
 import { PodcastCard, PodcastCardProps } from 'components/modules/cards';
-import {
-  podcast1,
-  podcast2,
-  podcast3,
-  anchor,
-  googlepodcast,
-  applepodcast,
-  iheartradio,
-  spotify,
-  rssfeed
-} from 'assets/images';
+import { anchor, googlepodcast, applepodcast, iheartradio, spotify, rssfeed } from 'assets/icons';
+import { podcast1, podcast2, podcast3 } from 'assets/images';
 
 export default function PodcastSection() {
   return (
