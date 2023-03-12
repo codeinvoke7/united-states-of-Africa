@@ -11,7 +11,7 @@ export default function AboutSection() {
     <section className="max-w-xl mx-auto my-10 grid md:grid-flow-col gap-8 px-6">
       <div className="place-self-center">
         <h2 className="text-primary text-xl">About Us</h2>
-        <p className="text-5xl font-bold font-serif">Who We Are</p>
+        <p className="text-5xl font-bold font-serif py-4">Who We Are</p>
         <p className="text-xl tracking-widest">
           The United States of Africa is registered as a non profit corporation in Texas, United
           States.

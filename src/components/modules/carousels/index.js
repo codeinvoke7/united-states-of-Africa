@@ -1,1 +1,1 @@
-export { default as CallToActionCarousel } from './Hero';
+export { default as NewsCarousel } from './NewsCarousel';

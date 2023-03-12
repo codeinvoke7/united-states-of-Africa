@@ -38,7 +38,7 @@ const cardsData: GetInvolvedCardProps[] = [
     buttonLabel: 'Donate now'
   },
   {
-    title: 'Join As A member',
+    title: 'Become a Suporter',
     description: 'Join us and help create the Africa we want. Become a supporter today!',
     link: SUBSCRIBE_AS_PATRON,
     icon: member,
