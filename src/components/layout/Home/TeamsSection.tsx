@@ -56,7 +56,7 @@ const teamMembers: TeamMemberCardProps[] = [
   },
   {
     description:
-      "As a volunteer Business Analyst at United States of Africa, I've had a fantastic experience using my expertise to identify areas for growth and improvement and provide actionable insights. Collaborating with others and being a part of a mission to make a difference has been fulfilling, and I'm proud of what we have accomplished together.",
+      "As a volunteer Business Analyst at United States of Africa, I've had a fantastic experience using my expertise to identify areas for growth and improvement and provide actionable insights. Collaborating with others and being a part of a mission to make a difference has been fulfilling, and I'm proud of what we've accomplished together.",
     image: member3,
     name: 'David Stones',
     role: 'Business Analyst',
