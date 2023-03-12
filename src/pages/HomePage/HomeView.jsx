@@ -7,7 +7,9 @@ import {
   NewsSection,
   SubscribeSection,
   TeamsSection,
-  WhatWeDoSection
+  WhatWeDoSection,
+  EventsSection,
+  PodcastSection
 } from 'components/layout/Home';
 import { TabProvider } from 'components/modules/tabs';
 
@@ -26,6 +28,8 @@ function HomeView() {
       <HowToSection />
       <NewsSection />
       <TeamsSection />
+      <EventsSection />
+      <PodcastSection />
       <SubscribeSection />
     </>
   );

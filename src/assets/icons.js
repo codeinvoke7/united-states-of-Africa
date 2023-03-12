@@ -3,6 +3,13 @@ const SVG_PATH = '/assets/icons';
 export const usafLogo = `${SVG_PATH}/usaf_logo.png`;
 export const usafFlag = `${SVG_PATH}/usaf_flag.png`;
 
+export const anchor = `${SVG_PATH}/anchor.png`;
+export const googlepodcast = `${SVG_PATH}/googlepodcast.png`;
+export const applepodcast = `${SVG_PATH}/applepodcast.png`;
+export const iheartradio = `${SVG_PATH}/iheartradio.png`;
+export const rssfeed = `${SVG_PATH}/rssfeed.png`;
+export const spotify = `${SVG_PATH}/spotify.png`;
+
 export const hausaFlag = `${SVG_PATH}/hausa_flag.svg`;
 export const amharicFlag = `${SVG_PATH}/amharic_flag.svg`;
 export const oromoFlag = `${SVG_PATH}/oromo_flag.svg`;

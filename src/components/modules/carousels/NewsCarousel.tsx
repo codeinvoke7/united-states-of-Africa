@@ -5,7 +5,7 @@ import { news1, news2, news3, news4 } from 'assets/images';
 import { RxCaretLeft, RxCaretRight } from 'react-icons/rx';
 import clsx from 'clsx';
 import Carousel from 'react-multi-carousel';
-import { ButtonGroupProps } from 'react-multi-carousel';
+import { ButtonGroupProps } from 'react-multi-carousel/lib/types';
 import 'react-multi-carousel/lib/styles.css';
 
 export default function NewsCarousel({ gap }: NewsCarouselProps) {

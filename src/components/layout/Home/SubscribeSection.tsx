@@ -27,7 +27,7 @@ export default function SubscribeSection() {
         <p className="text-lg mt-5 lg:text-2xl text-[#fff] font-normal leading-tight">
           Subscribe to out Newsletter
         </p>
-        <form className="flex flex-row items-center mt-5" onSubmit={handleFormSubmit}>
+        <form className="flex flex-row items-center mt-4" onSubmit={handleFormSubmit}>
           <div className="flex flex-row items-center mx-auto">
             <input
               type="email"

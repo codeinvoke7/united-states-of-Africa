@@ -14,3 +14,7 @@ export const news4 = `${IMAGES_PATH}/news_4.png`;
 export const member1 = `${IMAGES_PATH}/member1.png`;
 export const member2 = `${IMAGES_PATH}/member2.png`;
 export const member3 = `${IMAGES_PATH}/member3.png`;
+
+export const podcast1 = `${IMAGES_PATH}/podcast1.png`;
+export const podcast2 = `${IMAGES_PATH}/podcast2.png`;
+export const podcast3 = `${IMAGES_PATH}/podcast3.png`;
