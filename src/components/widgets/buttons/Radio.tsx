@@ -31,38 +31,10 @@ export default function RadioButton() {
   };
   return (
     <div className="flex flex-row">
-      <Radio
-        name="dark"
-        id="dark"
-        value="Dark"
-        text="Dark"
-        onChange={onChangeTheme}
-        checked={theme.dark}
-      />
-      <Radio
-        name="light"
-        id="light"
-        value="Light"
-        text="Light"
-        onChange={onChangeTheme}
-        checked={theme.light}
-      />
-      <Radio
-        name="light"
-        id="light"
-        value="Light"
-        text="Light"
-        onChange={onChangeTheme}
-        checked={theme.light}
-      />
-      <Radio
-        name="light"
-        id="light"
-        value="Light"
-        text="Light"
-        onChange={onChangeTheme}
-        checked={theme.light}
-      />
+      <Radio name="dark" id="dark" value="Dark" onChange={onChangeTheme} checked={theme.dark} />
+      <Radio name="light" id="light" value="Light" onChange={onChangeTheme} checked={theme.light} />
+      <Radio name="light" id="light" value="Light" onChange={onChangeTheme} checked={theme.light} />
+      <Radio name="light" id="light" value="Light" onChange={onChangeTheme} checked={theme.light} />
     </div>
   );
 }
