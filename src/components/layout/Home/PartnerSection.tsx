@@ -1,4 +1,16 @@
-import { ahm2, bmhm, bwc, fwpp, gpan, gpanqc, iheba, palc, sbtm, swwp } from 'assets/icons';
+import {
+  ahm2,
+  bmhm,
+  bwc,
+  fwpp,
+  gpan,
+  gpanqc,
+  iheba,
+  palc,
+  sbtm,
+  swwp,
+  zumarada
+} from 'assets/icons';
 import { PARTNER } from 'navigation/CONSTANTS';
 import React from 'react';
 import { RxCaretRight } from 'react-icons/rx';
@@ -21,4 +33,16 @@ export default function PartnerSection() {
   );
 }
 
-const partnersIcon: string[] = [ahm2, bmhm, bwc, fwpp, gpan, gpanqc, iheba, palc, sbtm, swwp];
+const partnersIcon: string[] = [
+  ahm2,
+  bmhm,
+  bwc,
+  fwpp,
+  gpan,
+  gpanqc,
+  iheba,
+  palc,
+  sbtm,
+  swwp,
+  zumarada
+];
