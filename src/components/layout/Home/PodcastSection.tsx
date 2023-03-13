@@ -43,17 +43,20 @@ const podcastData: PodcastCardProps[] = [
   {
     image: podcast1,
     title: 'Pan African Leadership Center',
-    description: 'Episode 2'
+    description: 'Episode 2',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/How-Nature-influences-your-Mental-wellbeing-e1tq92j'
   },
   {
     image: podcast2,
     title: 'Africa & Technology',
-    description: 'Episode 5'
+    description: 'Episode 5',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/How-to-move-our-minds-and-bodies-through-grief-e1vgfa1'
   },
   {
     image: podcast3,
     title: 'Black mental health matters',
-    description: 'Episode 8'
+    description: 'Episode 8',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/The-impact-of-trauma-and-adversity-on-mental-health-e1uqmob'
   }
 ];
 

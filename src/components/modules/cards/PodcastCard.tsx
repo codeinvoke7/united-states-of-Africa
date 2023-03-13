@@ -6,12 +6,13 @@ import { AiFillPlayCircle } from 'react-icons/ai';
 const propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 };
 
 export type PodcastCardProps = PropTypes.InferProps<typeof propTypes>;
 
-export default function PodcastCard({ image, title, description }: PodcastCardProps) {
+export default function PodcastCard({ image, title, description, url }: PodcastCardProps) {
   return (
     <div className="card card-side">
       <figure>
@@ -24,8 +25,10 @@ export default function PodcastCard({ image, title, description }: PodcastCardPr
         </h3>
         <div className="flex">
           <p className="text-[#818181] text-xs font-light md:text-md">{description}</p>
-          <AiFillPlayCircle className="text-primary cursor-pointer" />
-          <GiSoundWaves className="w-10" />
+          <a href={url} className="flex">
+            <AiFillPlayCircle className="text-primary cursor-pointer" />
+            <GiSoundWaves className="w-10" />
+          </a>
         </div>
       </div>
     </div>

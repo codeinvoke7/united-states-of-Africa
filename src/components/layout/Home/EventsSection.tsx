@@ -26,7 +26,7 @@ export default function EventsSection() {
             African descent under one political kingdom based in Africa.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-2 mx-auto my-2 gap-x-3  gap-y-8 md:gap-x-8 max-w-md px-4 place-content-center">
+        <div className="grid md:grid-cols-2 mx-auto my-2 gap-x-3  gap-y-8 md:gap-x-8 max-w-md px-4 place-content-center">
           {cardsData.map((data, index) => {
             return <EventsCard key={data.title + index} {...data} />;
           })}
