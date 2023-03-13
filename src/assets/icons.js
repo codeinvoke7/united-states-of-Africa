@@ -30,3 +30,18 @@ export const education = `${SVG_PATH}/education.svg`;
 export const humanRights = `${SVG_PATH}/human_rights.svg`;
 export const mentalHealth = `${SVG_PATH}/mental_health.svg`;
 export const technologieInovation = `${SVG_PATH}/technologie_inovation.svg`;
+
+export const error404 = `${SVG_PATH}/404_error.svg`;
+
+export const daniel = `${SVG_PATH}/daniel.png`;
+
+export const ahm2 = `${SVG_PATH}/ahm2.png`;
+export const bmhm = `${SVG_PATH}/bmhm.png`;
+export const bwc = `${SVG_PATH}/bwc.png`;
+export const fwpp = `${SVG_PATH}/fwpp.jpeg`;
+export const gpan = `${SVG_PATH}/gpanlogo.png`;
+export const gpanqc = `${SVG_PATH}/gpanqc.jpeg`;
+export const iheba = `${SVG_PATH}/iheba.png`;
+export const palc = `${SVG_PATH}/palc.png`;
+export const sbtm = `${SVG_PATH}/sbtm.png`;
+export const swwp = `${SVG_PATH}/swwp.png`;

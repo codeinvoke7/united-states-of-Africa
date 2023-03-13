@@ -27,6 +27,8 @@ export const MISSION = '/mission';
 export const VISION = '/vision';
 export const GOAL = '/goal';
 
+export const PARTNER = '/partner-with-us';
+
 export const SUBSCRIBE_AS_PATRON = 'https://www.patreon.com/USAfrikagov/';
 
 // Social links

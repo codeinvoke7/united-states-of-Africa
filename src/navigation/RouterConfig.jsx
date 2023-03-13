@@ -2,7 +2,7 @@ import { ProtectedRoutes } from 'components/guards';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HOME, LOGIN } from './CONSTANTS';
-import { Home, Login } from 'pages';
+import { Home, Login, PageNotFoundError } from 'pages';
 import { Page } from 'components/layout';
 
 function RouterConfig() {
@@ -21,7 +21,7 @@ function RouterConfig() {
         {/** ***********************404************************************** */}
 
         {/* List All 404 routes here */}
-        <Route path="*" element={<p>There is nothing here: 404!</p>} />
+        <Route path="*" element={<PageNotFoundError />} />
       </Route>
     </Routes>
   );

@@ -16,56 +16,6 @@ import {
 } from 'navigation/CONSTANTS';
 import React from 'react';
 
-const contactLinks = [
-  {
-    to: PROGRAMS,
-    label: 'Programs'
-  },
-  {
-    to: DONATE,
-    label: 'Donate'
-  },
-  {
-    to: ONGOING_PROPJECTS,
-    label: 'Ongoing Projects'
-  },
-  {
-    to: NEWS,
-    label: 'News'
-  },
-  {
-    to: EVENTS,
-    label: 'Events'
-  },
-  {
-    to: WORKFORCE,
-    label: 'Workforce'
-  }
-];
-
-const otherLinks = [
-  {
-    to: FAQS,
-    label: 'FAQs'
-  },
-  {
-    to: REVIEWS,
-    label: 'Reviews'
-  },
-  {
-    to: SUBSCRIBE,
-    label: 'Subscribe'
-  },
-  {
-    to: PRIVACY_POLICY,
-    label: 'Privacy Policy'
-  },
-  {
-    to: TERMS_CONDITION,
-    label: 'Terms & Condition'
-  }
-];
-
 export default function Footer() {
   return (
     <div className="bg-neutral text-neutral-content">
@@ -130,3 +80,53 @@ export default function Footer() {
     </div>
   );
 }
+
+const contactLinks = [
+  {
+    to: PROGRAMS,
+    label: 'Programs'
+  },
+  {
+    to: DONATE,
+    label: 'Donate'
+  },
+  {
+    to: ONGOING_PROPJECTS,
+    label: 'Ongoing Projects'
+  },
+  {
+    to: NEWS,
+    label: 'News'
+  },
+  {
+    to: EVENTS,
+    label: 'Events'
+  },
+  {
+    to: WORKFORCE,
+    label: 'Workforce'
+  }
+];
+
+const otherLinks = [
+  {
+    to: FAQS,
+    label: 'FAQs'
+  },
+  {
+    to: REVIEWS,
+    label: 'Reviews'
+  },
+  {
+    to: SUBSCRIBE,
+    label: 'Subscribe'
+  },
+  {
+    to: PRIVACY_POLICY,
+    label: 'Privacy Policy'
+  },
+  {
+    to: TERMS_CONDITION,
+    label: 'Terms & Condition'
+  }
+];

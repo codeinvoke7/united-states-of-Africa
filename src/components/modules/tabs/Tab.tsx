@@ -33,9 +33,10 @@ export default function Tab({ tabs }: TabProps) {
           return (
             <div
               key={'tabcontent' + index}
-              className={clsx('motion-safe:transition-[bottom,opacity] duration-500 ', {
-                'absolute opacity-0 w-full h-full bottom-full ': context?.activeTab !== index,
-                'relative opacity-100 -bottom-full delay-300': context?.activeTab === index
+              className={clsx({
+                'absolute w-full h-full motion-safe:animate-backOutDown':
+                  context?.activeTab !== index,
+                'relative motion-safe:animate-backInUp': context?.activeTab === index
               })}
               style={{ transform: `translateX()` }}
             >
