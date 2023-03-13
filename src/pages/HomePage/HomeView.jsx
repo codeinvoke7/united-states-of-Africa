@@ -5,6 +5,8 @@ import {
   HowToSection,
   MissionSection,
   NewsSection,
+  PartnerSection,
+  ReviewSection,
   SubscribeSection,
   TeamsSection,
   WhatWeDoSection,
@@ -31,6 +33,8 @@ function HomeView() {
       <EventsSection />
       <PodcastSection />
       <SubscribeSection />
+      <ReviewSection />
+      <PartnerSection />
     </>
   );
 }

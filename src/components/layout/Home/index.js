@@ -9,3 +9,5 @@ export { default as WhatWeDoSection } from './WhatWeDoSection';
 export { default as TeamsSection } from './TeamsSection';
 export { default as EventsSection } from './EventsSection';
 export { default as PodcastSection } from './PodcastSection';
+export { default as ReviewSection } from './ReviewSection';
+export { default as PartnerSection } from './PartnerSection';

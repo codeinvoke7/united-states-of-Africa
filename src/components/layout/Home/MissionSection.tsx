@@ -11,12 +11,14 @@ export default function MissionSection() {
 
   return (
     <section className="relative overflow-hidden my-16 bg-neutral">
-      <img
-        role="presentation"
-        loading="lazy"
-        src={missionBackground}
-        className="absolute w-full object-cover h-full mix-blend-luminosity max-w-xl mx-auto"
-      />
+      <div className="w-full h-full max-w-xl overflow-hidden mx-auto bg-base-100">
+        <img
+          role="presentation"
+          loading="lazy"
+          src={missionBackground}
+          className="absolute w-full max-w-xl object-cover h-full mix-blend-luminosity"
+        />
+      </div>
       <div className="max-w-xl mx-auto px-6 py-10 my-16">
         <div className="card bg-neutral text-neutral-content mx-auto lg:mx-0 lg:ml-auto max-w-sm">
           <div className="card-body">
