@@ -11,6 +11,7 @@ export { default as EventsCard } from './EventsCard';
 export { default as NewsCard } from './NewsCard';
 export { default as WhatWeDoCard } from './WhatWeDoCard';
 export { default as TeamMemberCard } from './TeamMemberCard';
+export { default as ReviewCard } from './ReviewCard';
 
 export * from './GetInvolvedCard';
 export * from './HowToCard';
@@ -19,3 +20,4 @@ export * from './PodcastCard';
 export * from './NewsCard';
 export * from './WhatWeDoCard';
 export * from './TeamMemberCard';
+export * from './ReviewCard';
