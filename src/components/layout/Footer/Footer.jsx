@@ -75,7 +75,7 @@ export default function Footer() {
           'px-6 py-8 max-w-xl mx-auto'
         )}
       >
-        &copy; Copyright 2022 USAF all rights reserved
+        &copy; Copyright {new Date().getFullYear()} USAF all rights reserved
       </footer>
     </div>
   );
