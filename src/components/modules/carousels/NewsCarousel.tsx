@@ -11,9 +11,8 @@ export default function NewsCarousel() {
   const responsive = {
     xs: { breakpoint: { max: 460, min: 0 }, items: 1 },
     sm: { breakpoint: { max: 640, min: 460 }, items: 2 },
-    md: { breakpoint: { max: 768, min: 640 }, items: 3 },
-    lg: { breakpoint: { max: 1024, min: 768 }, items: 3 },
-    xl: { breakpoint: { max: 1_000_000, min: 1024 }, items: 4 }
+    md: { breakpoint: { max: 1_024, min: 640 }, items: 3 },
+    lg: { breakpoint: { max: 1_000_000, min: 1024 }, items: 4 }
   };
 
   return (

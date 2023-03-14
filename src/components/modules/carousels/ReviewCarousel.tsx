@@ -13,17 +13,15 @@ export default function ReviewCarousel() {
   };
 
   return (
-    <div className="">
-      <Carousel
-        responsive={{ ...responsive }}
-        arrows={false}
-        customButtonGroup={<CustomButtonGroup />}
-      >
-        {reviews.map((review, index) => (
-          <ReviewCard {...review} key={review.review + index} />
-        ))}
-      </Carousel>
-    </div>
+    <Carousel
+      responsive={{ ...responsive }}
+      arrows={false}
+      customButtonGroup={<CustomButtonGroup />}
+    >
+      {reviews.map((review, index) => (
+        <ReviewCard {...review} key={review.review + index} />
+      ))}
+    </Carousel>
   );
 }
 
