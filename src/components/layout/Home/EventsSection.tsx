@@ -1,4 +1,5 @@
 import React from 'react';
+import { useContext } from 'react';
 import { subscribeBackground } from 'assets/images';
 import { EventsCard, EventsCardProps } from 'components/modules/cards';
 import { VOLUNTEER } from 'navigation/CONSTANTS';
@@ -31,7 +32,7 @@ export default function EventsSection() {
             return <EventsCard key={data.title + index} {...data} />;
           })}
         </div>
-        <div className="mx-auto max-w-md flex items-center py-3 justify-center">
+        <div className="mx-auto max-w-md flex items-center py-3 justify-center gap-8">
           <RadioButton />
         </div>
       </section>

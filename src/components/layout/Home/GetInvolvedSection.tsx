@@ -42,6 +42,6 @@ const cardsData: GetInvolvedCardProps[] = [
     description: 'Join us and help create the Africa we want. Become a supporter today!',
     link: SUBSCRIBE_AS_PATRON,
     icon: member,
-    buttonLabel: 'Be Member'
+    buttonLabel: 'Subscribe Now'
   }
 ];
