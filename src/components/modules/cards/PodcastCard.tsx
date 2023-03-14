@@ -25,7 +25,7 @@ export default function PodcastCard({ image, title, description, url }: PodcastC
         </h3>
         <div className="flex">
           <p className="text-[#818181] text-xs font-light md:text-md">{description}</p>
-          <a href={url} className="flex">
+          <a href={url} target="_blank" className="flex">
             <AiFillPlayCircle className="text-primary cursor-pointer" />
             <GiSoundWaves className="w-10" />
           </a>
