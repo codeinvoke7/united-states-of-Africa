@@ -11,7 +11,7 @@ export type WhatWeDoCardProps = PropTypes.InferProps<typeof propTypes>;
 
 export default function WhatWeDoCard({ icon, title, description }: WhatWeDoCardProps) {
   return (
-    <div className="card bg-primary bg-opacity-10 shadow-md">
+    <div className="card bg-primary bg-opacity-10 drop-shadow">
       <figure className="mt-4">
         <img loading="lazy" src={icon} className="w-16 h-16 mx-auto" />
       </figure>

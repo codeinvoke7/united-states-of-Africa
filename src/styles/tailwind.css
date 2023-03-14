@@ -6,7 +6,7 @@
 nav [role='listbox'].dropdown:has([aria-current='page'].active) > :nth-child(1),
 nav [aria-current='page'].active,
 nav [role='listbox'].dropdown .active {
-    @apply text-primary;
+    @apply text-accent;
 }
 
 nav [role='listbox'].dropdown li > * {

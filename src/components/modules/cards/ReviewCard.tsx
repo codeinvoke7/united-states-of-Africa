@@ -12,12 +12,12 @@ export default function ReviewCard({
   return (
     <div className="p-6">
       <span className="flex gap-1 place-content-center">{<Stars score={score} />}</span>
-      <p className="min-h-[3lh]">
+      <p className="min-h-[3lh] text-center">
         <ImQuotesLeft className="inline-flex mr-1 text-base-300 text-2xl" />
         {review}
         <ImQuotesRight className="inline-flex ml-1 text-base-300 text-2xl" />
       </p>
-      <div className="flex place-content-center">
+      <div className="flex place-content-center mt-2">
         <picture>
           <img src={image} className="max-h-20 aspect-square" />
         </picture>

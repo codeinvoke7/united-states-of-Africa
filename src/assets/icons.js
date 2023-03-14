@@ -45,4 +45,4 @@ export const iheba = `${SVG_PATH}/iheba.png`;
 export const palc = `${SVG_PATH}/palc.png`;
 export const sbtm = `${SVG_PATH}/sbtm.png`;
 export const swwp = `${SVG_PATH}/swwp.png`;
-export const zumarada = `${SVG_PATH}/zumarada.jpg`;
+export const zumaridiChat = `${SVG_PATH}/zumaridi_chat.jpg`;
