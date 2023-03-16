@@ -11,7 +11,7 @@ export default function MissionSection() {
 
   return (
     <section className="relative overflow-hidden my-16 bg-neutral">
-      <div className="w-full h-full max-w-full overflow-hidden mx-auto bg-base-100">
+      <div className="w-full h-full max-w-full mx-auto overflow-hidden mx-auto bg-base-100">
         <img
           role="presentation"
           loading="lazy"
