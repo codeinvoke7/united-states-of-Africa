@@ -45,7 +45,13 @@ export const iheba = `${SVG_PATH}/iheba.png`;
 export const palc = `${SVG_PATH}/palc.jpg`;
 export const sbtm = `${SVG_PATH}/sbtm.png`;
 export const swwp = `${SVG_PATH}/swwp.png`;
+
+export const email = `${SVG_PATH}/email.svg`;
+export const address = `${SVG_PATH}/address.svg`;
+export const phone = `${SVG_PATH}/phone.svg`;
+
 export const dmm = `${SVG_PATH}/dmm.png`;
 export const skv = `${SVG_PATH}/skv.png`;
 export const zuma = `${SVG_PATH}/zuma.png`;
+
 export const zumaridiChat = `${SVG_PATH}/zumaridi_chat.jpg`;
