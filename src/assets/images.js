@@ -19,3 +19,7 @@ export const member3 = `${IMAGES_PATH}/member3.png`;
 export const podcast1 = `${IMAGES_PATH}/podcast1.png`;
 export const podcast2 = `${IMAGES_PATH}/podcast2.png`;
 export const podcast3 = `${IMAGES_PATH}/podcast3.png`;
+
+export const faqImg = `${IMAGES_PATH}/faq-img.png`;
+export const customerSupport = `${IMAGES_PATH}/customer-support-img.png`;
+export const mapImg = `${IMAGES_PATH}/Mapsicle Map.png`;
