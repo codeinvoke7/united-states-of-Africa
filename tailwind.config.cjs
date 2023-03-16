@@ -48,7 +48,7 @@ module.exports = withAnimations({
           secondary: '#CF916D',
           accent: '#07AA3D',
           neutral: '#ffffff',
-          'base-100': '#008753',
+          'base-100': '#ffffff',
           info: '#3ABFF8',
           success: '#36D399',
           warning: '#FBBD23',

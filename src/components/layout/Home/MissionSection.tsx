@@ -16,7 +16,7 @@ export default function MissionSection() {
           role="presentation"
           loading="lazy"
           src={missionBackground}
-          className="absolute w-full max-w-full object-cover h-full"
+          className="absolute w-full max-w-xl object-cover h-full"
         />
       </div>
       <div className="max-w-xl mx-auto px-6 py-10 my-16">

@@ -36,7 +36,9 @@ export default function NavLinks({
       </button>
       <ul
         tabIndex={0}
-        className={'dropdown-content menu bg-base-100 p-2 shadow-inner min-w-max w-full'}
+        className={
+          'dropdown-content menu bg-base-100 p-2 drop-shadow min-w-max w-full text-base-content rounded-box'
+        }
       >
         {dropdownLinks.map(({ label, to }, index) => {
           return (

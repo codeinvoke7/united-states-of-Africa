@@ -42,7 +42,7 @@ function CustomButtonGroup({ next, previous, ...rest }: ButtonGroupProps) {
     <div className="carousel-button-group flex justify-end gap-8">
       <button
         className={clsx('btn btn-circle hover:bg-opacity-30 bg-opacity-30 text-base-100', {
-          invisible: carouselState?.currentSlide === 0
+          'btn-disabled': carouselState?.currentSlide === 0
         })}
         onClick={() => previous?.()}
       >
@@ -51,11 +51,12 @@ function CustomButtonGroup({ next, previous, ...rest }: ButtonGroupProps) {
 
       <button
         className={clsx('btn btn-circle hover:bg-opacity-30 bg-opacity-30 text-base-100', {
-          invisible: carouselState && carouselState.totalItems - 1 === carouselState.currentSlide
+          'btn-disabled cursor-not-allowed':
+            carouselState && carouselState.totalItems - 1 === carouselState.currentSlide
         })}
         onClick={() => next?.()}
       >
-        <RxCaretRight className="w-7 h-7" />
+        <RxCaretRight className="text-4xl font-bold" />
       </button>
     </div>
   );
