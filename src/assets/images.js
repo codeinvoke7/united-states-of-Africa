@@ -1,7 +1,7 @@
 const IMAGES_PATH = '/assets/images';
 
 export const videoPlaceholder = `${IMAGES_PATH}/video_placeholder.png`;
-export const missionBackground = `${IMAGES_PATH}/mission_background.jpeg`;
+export const missionBackground = `${IMAGES_PATH}/mission_background.jpg`;
 export const heroBackground = `${IMAGES_PATH}/hero_background.png`;
 export const subscribeBackground = `${IMAGES_PATH}/subscribe_background.png`;
 export const africaMaskBackground = `${IMAGES_PATH}/africa_mask_background.svg`;

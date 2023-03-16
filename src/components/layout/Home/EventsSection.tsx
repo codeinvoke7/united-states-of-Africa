@@ -1,4 +1,5 @@
 import React from 'react';
+import { useContext } from 'react';
 import { subscribeBackground } from 'assets/images';
 import { EventsCard, EventsCardProps } from 'components/modules/cards';
 import { VOLUNTEER } from 'navigation/CONSTANTS';
@@ -26,12 +27,12 @@ export default function EventsSection() {
             African descent under one political kingdom based in Africa.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-2 mx-auto my-2 gap-x-3  gap-y-8 md:gap-x-8 max-w-md px-4 place-content-center">
+        <div className="grid md:grid-cols-2 mx-auto my-2 gap-x-3  gap-y-8 md:gap-x-8 max-w-md px-4 place-content-center">
           {cardsData.map((data, index) => {
             return <EventsCard key={data.title + index} {...data} />;
           })}
         </div>
-        <div className="mx-auto max-w-md flex items-center py-3 justify-center">
+        <div className="mx-auto max-w-md flex items-center py-3 justify-center gap-8">
           <RadioButton />
         </div>
       </section>

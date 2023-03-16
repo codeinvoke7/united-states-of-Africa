@@ -1,3 +1,4 @@
+import React from 'react';
 import { usafLogo } from 'assets/icons';
 import clsx from 'clsx';
 import { NavLinksDropdown } from 'components/modules/dropdowns';
@@ -18,9 +19,12 @@ import {
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
+import { useContext } from 'react';
+import { pageHeaderColorContext } from 'components/context';
 
 export default function NavBar() {
   const [opened, setOpened] = useState(false);
+  const context = useContext(pageHeaderColorContext);
 
   const buttonList = useMemo(
     () =>
@@ -34,13 +38,15 @@ export default function NavBar() {
               className="dropdown-center"
               defaultIcon
               handleClick={() => setOpened(false)}
+              endDropdownIcon={undefined}
+              startDropdownIcon={undefined}
             />
           );
 
         return (
           <NavLinkButton
             key={label + index}
-            to={to}
+            to={to || ''}
             isAcccent={signIn}
             onClick={() => setOpened(false)}
           >
@@ -52,38 +58,47 @@ export default function NavBar() {
   );
 
   return (
-    <nav className="bg-base-100 drop-shadow sticky -top-1 isolate z-40">
-      <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
-        <div className="flex items-center mr-auto w-full md:w-auto">
-          <img
-            role="presentation"
-            src={usafLogo}
-            className="w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20 mr-auto"
-          />
-
-          <span className="md:hidden">
-            <Divide toggle={setOpened} toggled={opened} />
-          </span>
+    <nav
+      className="bg-primary drop-shadow sticky -top-1 isolate z-40 text-primary-content"
+      data-theme={context?.theme}
+    >
+      <div className="shadow-md sticky -top-1 z-40">
+        <div className={clsx('grid items-center px-6 py-4', 'md:flex mx-auto max-w-xl')}>
+          <div className="flex items-center mr-auto w-full md:w-auto">
+            <img
+              role="presentation"
+              src={usafLogo}
+              className="w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20 mr-auto"
+            />
+            <span className="md:hidden">
+              <Divide toggle={setOpened} toggled={opened} />
+            </span>
+          </div>
+          {/* Mobile view */}
+          <div
+            className={clsx('grid gap-1 md:hidden mx-auto px-8 transition-[height] duration-200', {
+              'mt-0 h-0 animate-backOutUp animate-duration-200 overflow-hidden': !opened,
+              'mt-8 mb-3 animate-backInDown h-full': opened
+            })}
+          >
+            {buttonList}
+          </div>
+          {/* Tablet and Destop view */}
+          <div className={clsx('hidden md:grid grid-flow-col gap-1')}>{buttonList}</div>
         </div>
-
-        {/* Mobile view */}
-        <div
-          className={clsx('grid gap-1 md:hidden mx-auto px-8', {
-            'hidden h-0 mt-0': !opened,
-            'mt-8 mb-3': opened
-          })}
-        >
-          {buttonList}
-        </div>
-
-        {/* Tablet and Destop view */}
-        <div className={clsx('hidden md:grid grid-flow-col gap-1')}>{buttonList}</div>
       </div>
     </nav>
   );
 }
 
-const navButtons = [
+type NavButtonType = {
+  label: string;
+  to?: string;
+  signIn?: boolean;
+  dropdownLinks?: { to: string; label: string }[];
+};
+
+const navButtons: NavButtonType[] = [
   {
     to: HOME,
     label: 'Home'

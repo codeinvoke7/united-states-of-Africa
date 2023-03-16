@@ -8,9 +8,9 @@ export default function PodcastSection() {
     <>
       <section className="grid grid-cols-2 mx-auto mt-8 gap-4 p-4">
         <div className="card card-compact my-auto order-1 sm:order-2">
-          <div className="card-body">
+          <div className="card-body gap-y-4">
             <h2 className="text-primary text-md md:text-4xl font-bold">Our Podcast Series</h2>
-            <p className="pt-1 leading-7 text-neural text-md md:text-5xl md:pt-3 ">
+            <p className=" leading-7 text-neural text-md md:leading-10 md:text-4xl md:pt-5 ">
               Listen to our weeky podcasts from experienced proffesionals and top public speakers on
               various platforms.
             </p>
@@ -42,18 +42,21 @@ export default function PodcastSection() {
 const podcastData: PodcastCardProps[] = [
   {
     image: podcast1,
-    title: 'Pan African Leadership Center',
-    description: 'Episode 2'
+    title: 'How Natures Influences Your Mental Wellbeing',
+    description: 'Episode 2',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/How-Nature-influences-your-Mental-wellbeing-e1tq92j'
   },
   {
     image: podcast2,
-    title: 'Africa & Technology',
-    description: 'Episode 5'
+    title: 'How to Move Our Minds and Body Through Grief',
+    description: 'Episode 5',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/How-to-move-our-minds-and-bodies-through-grief-e1vgfa1'
   },
   {
     image: podcast3,
-    title: 'Black mental health matters',
-    description: 'Episode 8'
+    title: 'The Impact of Trauma and Adversity on Mental Health',
+    description: 'Episode 8',
+    url: 'https://podcasters.spotify.com/pod/show/blackmentalhealthmatters/episodes/The-impact-of-trauma-and-adversity-on-mental-health-e1uqmob'
   }
 ];
 
