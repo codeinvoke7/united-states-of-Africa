@@ -48,12 +48,18 @@ export default function HeroSection() {
           <img src={context.backgroundImage} />
         </div>
 
-        <div className="absolute max-w-xl flex justify-between mx-auto w-full p-5 top-1/2 -translate-y-1/2">
-          <button onClick={() => context?.prevTheme()} className="btn btn-circle btn-sm sm:btn-md">
-            <RxCaretLeft className="w-8 h-8" />
+        <div className="absolute max-w-xl flex justify-between mx-auto w-full p-1 sm:p-5 top-1/2 -translate-y-1/2">
+          <button
+            onClick={() => context?.prevTheme()}
+            className="btn btn-circle btn-sm sm:btn-md text-xl"
+          >
+            <RxCaretLeft />
           </button>
-          <button onClick={() => context?.nextTheme()} className="btn btn-circle btn-sm sm:btn-md">
-            <RxCaretRight className="w-8 h-8" />
+          <button
+            onClick={() => context?.nextTheme()}
+            className="btn btn-circle btn-sm sm:btn-md text-xl"
+          >
+            <RxCaretRight />
           </button>
         </div>
       </div>
@@ -65,7 +71,7 @@ export default function HeroSection() {
               <button
                 type="button"
                 className={clsx(
-                  'w-8 h-8 rounded-full border-4 border-primary ring-4 ring-secondary',
+                  'w-5 h-5 rounded-full border-4 border-primary ring-4 ring-secondary',
                   {
                     'bg-secondary': theme === context?.theme
                   }
