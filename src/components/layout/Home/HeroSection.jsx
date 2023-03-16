@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { RxCaretLeft, RxCaretRight } from 'react-icons/rx';
-import { africaMaskBackground, heroBackground, yellowLine } from 'assets/images';
+import { africaMaskBackground, yellowLine } from 'assets/images';
 import { useContext } from 'react';
 import { pageHeaderColorContext } from 'components/context';
 import clsx from 'clsx';
@@ -32,18 +32,21 @@ export default function HeroSection() {
           </div>
         </div>
         <div
-          className="bg-no-repeat bg-contain bg-left-top absolute md:w-1/2 w-[55%] h-full right-0 md:right-0 z-auto"
+          className="bg-no-repeat bg-left-top absolute md:w-1/2 w-[55%] h-full right-0"
           style={{
-            backgroundImage: `url(${heroBackground})`,
-            backgroundSize: '120%',
+            backgroundImage: `url(${context.backgroundImage})`,
             maskImage: `url(${africaMaskBackground})`,
             WebkitMaskImage: `url(${africaMaskBackground})`,
+
             maskSize: 'contain',
             WebkitMaskSize: 'contain',
+
             maskRepeat: 'no-repeat',
             WebkitMaskRepeat: 'no-repeat'
           }}
-        ></div>
+        >
+          <img src={context.backgroundImage} />
+        </div>
 
         <div className="absolute max-w-xl flex justify-between mx-auto w-full p-5 top-1/2 -translate-y-1/2">
           <button onClick={() => context?.prevTheme()} className="btn btn-circle btn-sm sm:btn-md">

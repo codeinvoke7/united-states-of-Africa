@@ -1,6 +1,7 @@
 import React, { createContext } from 'react';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { heroBackground, heroBackground2, heroBackground3 } from 'assets/images';
 
 export const pageHeaderColorContext = createContext<ThemeContextType | null>(null);
 
@@ -8,6 +9,7 @@ export default function PageHeaderColorContextProvider({
   children
 }: PageHeaderColorContextProviderProps) {
   const [theme, setTheme] = useState('');
+  const [backgroundImage, setBackgroundImage] = useState(heroBackground);
 
   const black = 'heroBlack';
   const white = 'heroWhite';
@@ -15,15 +17,18 @@ export default function PageHeaderColorContextProvider({
 
   const themes: string[] = [green, black, white];
 
-  const setThemeHeroDefault = () => setTheme(green);
-  const setThemeHeroBlack = () => setTheme(black);
-  const setThemeHeroWhite = () => setTheme(white);
-
-  // const nextTheme = () => {
-  //   if (theme === green) return setThemeHeroBlack();
-  //   if (theme === black) return setThemeHeroWhite();
-  //   setThemeHeroDefault();
-  // };
+  const setThemeHeroDefault = () => {
+    setTheme(green);
+    setBackgroundImage(heroBackground);
+  };
+  const setThemeHeroBlack = () => {
+    setTheme(black);
+    setBackgroundImage(heroBackground2);
+  };
+  const setThemeHeroWhite = () => {
+    setTheme(white);
+    setBackgroundImage(heroBackground3);
+  };
 
   const nextTheme = () => {
     setThemeHero(themes.findIndex((arrayTheme) => arrayTheme === theme) + 1);
@@ -32,13 +37,6 @@ export default function PageHeaderColorContextProvider({
   const prevTheme = () => {
     setThemeHero(themes.findIndex((arrayTheme) => arrayTheme === theme) - 1);
   };
-
-  // const prevTheme = () => {
-  //   if (theme === white) return setThemeHeroBlack();
-  //   if (theme === green) return setThemeHeroWhite();
-  //   setThemeHeroDefault();
-  // };
-
   const setThemeHero = (order = 0) => {
     let value = order % themes.length;
 
@@ -54,6 +52,7 @@ export default function PageHeaderColorContextProvider({
         prevTheme,
         nextTheme,
         setThemeHero,
+        backgroundImage,
         themes
       }}
     >
@@ -70,6 +69,7 @@ type PageHeaderColorContextProviderProps = PropTypes.InferProps<typeof propTypes
 
 type ThemeContextType = {
   theme: string;
+  backgroundImage: string;
   themes: readonly string[];
   setThemeHero: (order: number) => void;
   prevTheme: () => void;
