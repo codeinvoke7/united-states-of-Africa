@@ -8,7 +8,10 @@ import {
   iheba,
   palc,
   sbtm,
+  skv,
+  zuma,
   swwp,
+  dmm,
   zumaridiChat
 } from 'assets/icons';
 import { PARTNER } from 'navigation/CONSTANTS';
@@ -18,10 +21,10 @@ import { Link } from 'react-router-dom';
 
 export default function PartnerSection() {
   return (
-    <section className="max-w-xl mx-auto my-10 px-6 grid">
-      <h2 className="text-3xl font-bold font-serif">Our partners</h2>
+    <section className="max-w-full md:max-w-xl mx-auto  my-10 grid">
+      <h2 className="text-3xl px-3 font-bold font-serif">Our partners</h2>
 
-      <div className="flex gap-6 my-10 flex-wrap place-content-center">
+      <div className="flex gap-3 my-10 flex-wrap place-content-center">
         {partnersIcon.map((partnerLogo, index) => (
           <img key={partnerLogo + index} src={partnerLogo} className="max-h-16 aspect-auto" />
         ))}
@@ -42,6 +45,9 @@ const partnersIcon: string[] = [
   gpan,
   gpanqc,
   iheba,
+  skv,
+  zuma,
+  dmm,
   palc,
   sbtm,
   swwp,
