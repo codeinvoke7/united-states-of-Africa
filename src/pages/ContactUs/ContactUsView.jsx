@@ -1,5 +1,5 @@
 import { faqImg, customerSupport } from 'assets/images';
-import { MapSection } from 'components/layout/ContactUs';
+import { ContactForm, MapSection } from 'components/layout/ContactUs';
 
 export const ContactUsView = () => {
   return (
@@ -42,6 +42,7 @@ export const ContactUsView = () => {
         </div>
       </section>
       <MapSection />
+      <ContactForm />
     </>
   );
 };

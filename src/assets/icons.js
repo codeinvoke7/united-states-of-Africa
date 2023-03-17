@@ -49,6 +49,7 @@ export const swwp = `${SVG_PATH}/swwp.png`;
 export const email = `${SVG_PATH}/email.svg`;
 export const address = `${SVG_PATH}/address.svg`;
 export const phone = `${SVG_PATH}/phone.svg`;
+export const paperclip = `${SVG_PATH}/paperclip.svg`;
 
 export const dmm = `${SVG_PATH}/dmm.png`;
 export const skv = `${SVG_PATH}/skv.png`;
