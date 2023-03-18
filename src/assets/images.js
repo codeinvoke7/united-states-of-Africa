@@ -14,6 +14,7 @@ export const news1 = `${IMAGES_PATH}/news_1.png`;
 export const news2 = `${IMAGES_PATH}/news_2.png`;
 export const news3 = `${IMAGES_PATH}/news_3.png`;
 export const news4 = `${IMAGES_PATH}/news_4.png`;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 export const WhyVolunteer = `${IMAGES_PATH}/WhyVolunteer.png`;
@@ -32,3 +33,5 @@ export const faqImg = `${IMAGES_PATH}/faq-img.png`;
 export const customerSupport = `${IMAGES_PATH}/customer-support-img.png`;
 export const mapImg = `${IMAGES_PATH}/Mapsicle Map.png`;
 >>>>>>> dce586579b425a781d7f6d9bde5ad5daecf020fb
+=======
+>>>>>>> parent of 5b078c1 (feat: finish initial version of the volunteer page)

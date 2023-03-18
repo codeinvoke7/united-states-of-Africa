@@ -28,10 +28,13 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-player": "^2.12.0",
 =======
     "react-multi-carousel": "^2.8.2",
 >>>>>>> dce586579b425a781d7f6d9bde5ad5daecf020fb
+=======
+>>>>>>> parent of 5b078c1 (feat: finish initial version of the volunteer page)
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "tailwind-merge": "^1.10.0",
