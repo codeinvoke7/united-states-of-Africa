@@ -1,8 +1,8 @@
 import { ProtectedRoutes } from 'components/guards';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { HOME, LOGIN } from './CONSTANTS';
-import { Home, Login } from 'pages';
+import { HOME, LOGIN, VOLUNTEER } from './CONSTANTS';
+import { Home, Login, Volunteer } from 'pages';
 import { Page } from 'components/layout';
 
 function RouterConfig() {
@@ -14,6 +14,7 @@ function RouterConfig() {
         {/* List all public routes here */}
         <Route exact path={HOME} element={<Home />} />
         <Route exact path={LOGIN} element={<Login />} />
+        <Route exact path={VOLUNTEER} element={<Volunteer />} />
 
         {/** ***********************PROTECTED ROUTES************************************** */}
         <Route element={<ProtectedRoutes redirectPath={LOGIN} />} />
