@@ -6,7 +6,7 @@
 nav [role='listbox'].dropdown:has([aria-current='page'].active) > :nth-child(1),
 nav [aria-current='page'].active,
 nav [role='listbox'].dropdown .active {
-    @apply text-primary;
+    @apply text-accent;
 }
 
 nav [role='listbox'].dropdown li > * {
@@ -27,6 +27,6 @@ nav .dropdown.dropdown-hover :focus ~ .dropdown-content {
 }
 
 .footer .footer-title {
-    @apply opacity-100 text-opacity-0 font-extrabold
+    @apply opacity-100 text-opacity-0 font-extrabold;
 }
 /* prettier-ignore-end */

@@ -21,7 +21,7 @@ export default function GetInvolvedCard({
   link
 }: GetInvolvedCardProps) {
   return (
-    <div className="card bg-base-100 shadow-md border-2 border-base-100">
+    <div className="card bg-base-100 drop-shadow border-2 border-base-100">
       <figure>
         <img loading="lazy" src={icon} className="w-16 h-16 mx-auto mt-4" />
       </figure>
@@ -29,7 +29,7 @@ export default function GetInvolvedCard({
         <h3 className="card-title mx-auto">{title}</h3>
         <p className="line-clamp-4 text-center">{description}</p>
         <div className="card-actions">
-          <Link className="btn btn-ghost normal-case gap-2 mx-auto" to={link}>
+          <Link className="btn btn-ghost normal-case gap-2 mx-auto text-primary" to={link}>
             {buttonLabel} <AiOutlinePlus />
           </Link>
         </div>

@@ -6,49 +6,6 @@ import { DropdownIcon, FlagIcon } from 'components/widgets/icons';
 export default function Language({ className }) {
   const [active, setActive] = useState(0);
 
-  const languages = [
-    {
-      name: 'English',
-      icon: <FlagIcon name="gb" />,
-      abbreviation: 'Eng'
-    },
-    {
-      name: 'French',
-      icon: <FlagIcon name="fr" />,
-      abbreviation: 'Fra'
-    },
-    {
-      name: 'Amharic',
-      icon: <FlagIcon name="am" />,
-      abbreviation: 'Am'
-    },
-    {
-      name: 'Hausa',
-      icon: <FlagIcon name="ha" />,
-      abbreviation: 'Ha'
-    },
-    {
-      name: 'Yoruba',
-      icon: <FlagIcon name="yo" />,
-      abbreviation: 'Yo'
-    },
-    {
-      name: 'Swahili',
-      icon: <FlagIcon name="sw" />,
-      abbreviation: 'Sw'
-    },
-    {
-      name: 'Oromo',
-      icon: <FlagIcon name="orm" />,
-      abbreviation: 'Orm'
-    },
-    {
-      name: 'Zulu',
-      icon: <FlagIcon name="zu" />,
-      abbreviation: 'Zu'
-    }
-  ];
-
   const changeLanguage = (index) => {
     setActive(index >= languages.length ? 0 : index);
   };
@@ -56,7 +13,7 @@ export default function Language({ className }) {
   const getActiveLanguage = () => languages.find((_, index) => index === active) || null;
 
   return (
-    <div role="listbox" className={clsx(['dropdown group', className])}>
+    <div role="listbox" className={clsx(['dropdown group focus-within:dropdown-open', className])}>
       <button type="button" className="btn btn-ghost gap-1 flex-nowrap">
         {getActiveLanguage()?.icon}
         <span className="capitalize w-[3ch]">{getActiveLanguage()?.abbreviation}</span>
@@ -69,10 +26,10 @@ export default function Language({ className }) {
             onClick={() => changeLanguage(index)}
             className="items-start"
           >
-            <a className="px-6 rounded-none bg-opacity-50 capitalize">
+            <button className="px-6 rounded-none bg-opacity-50 capitalize">
               {language?.icon}
               <span>{language?.name}</span>
-            </a>
+            </button>
           </li>
         ))}
       </ul>
@@ -83,3 +40,46 @@ export default function Language({ className }) {
 Language.propTypes = {
   className: PropTypes.string
 };
+
+const languages = [
+  {
+    name: 'English',
+    icon: <FlagIcon name="gb" />,
+    abbreviation: 'Eng'
+  },
+  {
+    name: 'French',
+    icon: <FlagIcon name="fr" />,
+    abbreviation: 'Fra'
+  },
+  {
+    name: 'Amharic',
+    icon: <FlagIcon name="am" />,
+    abbreviation: 'Am'
+  },
+  {
+    name: 'Hausa',
+    icon: <FlagIcon name="ha" />,
+    abbreviation: 'Ha'
+  },
+  {
+    name: 'Yoruba',
+    icon: <FlagIcon name="yo" />,
+    abbreviation: 'Yo'
+  },
+  {
+    name: 'Swahili',
+    icon: <FlagIcon name="sw" />,
+    abbreviation: 'Sw'
+  },
+  {
+    name: 'Oromo',
+    icon: <FlagIcon name="orm" />,
+    abbreviation: 'Orm'
+  },
+  {
+    name: 'Zulu',
+    icon: <FlagIcon name="zu" />,
+    abbreviation: 'Zu'
+  }
+];

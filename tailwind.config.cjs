@@ -1,5 +1,7 @@
+const { withAnimations } = require('animated-tailwindcss');
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withAnimations({
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
@@ -37,17 +39,29 @@ module.exports = {
           info: '#3ABFF8',
           success: '#36D399',
           warning: '#FBBD23',
-          error: '#F87272',
-          white: '#ffffff'
+          error: '#F87272'
         }
       },
       {
-        dark: {
-          primary: '#2DA447',
+        heroBlack: {
+          primary: '#25373F',
+          secondary: '#CF916D',
+          accent: '#07AA3D',
+          neutral: '#ffffff',
+          'base-100': '#ffffff',
+          info: '#3ABFF8',
+          success: '#36D399',
+          warning: '#FBBD23',
+          error: '#F87272'
+        }
+      },
+      {
+        heroWhite: {
+          primary: '#ffffff',
           secondary: '#CF916D',
           accent: '#07AA3D',
           neutral: '#25373F',
-          'base-100': '#ffffff',
+          'base-100': '#008753',
           info: '#3ABFF8',
           success: '#36D399',
           warning: '#FBBD23',
@@ -56,4 +70,4 @@ module.exports = {
       }
     ]
   }
-};
+});

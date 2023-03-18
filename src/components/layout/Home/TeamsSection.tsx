@@ -2,8 +2,14 @@ import { VOLUNTEER, VOLUNTEERS } from 'navigation/CONSTANTS';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TeamMemberCard, TeamMemberCardProps } from 'components/modules/cards';
-import { news1, news2, news3 } from 'assets/images';
-import { SocialGroupButton } from 'components/widgets/buttons';
+import { member1, member2, member3 } from 'assets/images';
+import {
+  FacebookButton,
+  InstagramButton,
+  LinkedinButton,
+  SocialGroupButton,
+  TwitterButton
+} from 'components/widgets/buttons';
 
 export default function TeamsSection() {
   return (
@@ -30,29 +36,52 @@ export default function TeamsSection() {
   );
 }
 
+const socialMediaClassName = 'btn-xs btn-ghost';
+
 const teamMembers: TeamMemberCardProps[] = [
   {
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates?',
-    image: news1,
+      "As a volunteer UX Researcher at United States of Africa, I've been able to use my creativity and insights to develop user-centered products that meet the needs of our target audience. Being a part of this mission has been inspiring, and collaborating with a talented and dedicated team of people has been a pleasure. The impact of our work is significant, and I'm proud to be a part of it.",
+    image: member1,
     name: 'Jerry Toms',
-    role: 'Fronend Developper',
-    socialLinks: [<SocialGroupButton className="btn-xs gap-1" />]
+    role: 'UX Researcher',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates?',
-    image: news2,
+      "As a volunteer Business Analyst at United States of Africa, I've had a fantastic experience using my expertise to identify areas for growth and improvement and provide actionable insights. Collaborating with others and being a part of a mission to make a difference has been fulfilling, and I'm proud of what we've accomplished together.",
+    image: member3,
     name: 'David Stones',
-    role: 'Fronend Developper',
-    socialLinks: [<SocialGroupButton className="btn-xs gap-1" />]
+    role: 'Business Analyst',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   },
   {
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates?',
-    image: news3,
+      "I've loved volunteering as a Scrum Master at United States of Africa. Leading our agile development process and ensuring that we deliver high-quality products on time and within budget has been incredibly rewarding. The collaborative and positive work environment that we've created has made this experience even more enjoyable, and I'm honored to be a part of this mission.",
+    image: member2,
     name: 'Jacky Jonhson',
-    role: 'Fronend Developper',
-    socialLinks: [<SocialGroupButton className="btn-xs gap-1" />]
+    role: 'Scrum Master',
+    socialLinks: (
+      <div>
+        <FacebookButton className={socialMediaClassName} />
+        <InstagramButton className={socialMediaClassName} />
+        <LinkedinButton className={socialMediaClassName} />
+        <TwitterButton className={socialMediaClassName} />
+      </div>
+    )
   }
 ];

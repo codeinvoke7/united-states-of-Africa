@@ -12,18 +12,19 @@ export default function NavLinks({
   className,
   defaultIcon,
   handleClick,
-  to,
   ...rest
 }) {
   return (
     <div
       role="listbox"
-      className={clsx(['dropdown dropdown-hover w-full group/outer', className])}
+      className={clsx([
+        'dropdown dropdown-hover w-full group/outer focus-within:dropdown-open',
+        className
+      ])}
       {...rest}
     >
-      <NavLink
+      <button
         type="button"
-        to={to}
         className={clsx('btn rounded-full normal-case btn-ghost gap-1 flex-nowrap w-full')}
       >
         {startDropdownIcon || null}
@@ -32,10 +33,12 @@ export default function NavLinks({
         {defaultIcon && (
           <DropdownIcon right className={`group-hover/outer:rotate-90 transition-transform`} />
         )}
-      </NavLink>
+      </button>
       <ul
         tabIndex={0}
-        className={'dropdown-content menu bg-base-100 p-2 shadow-inner min-w-max w-full'}
+        className={
+          'dropdown-content menu bg-base-100 p-2 drop-shadow min-w-max w-full text-base-content rounded-box'
+        }
       >
         {dropdownLinks.map(({ label, to }, index) => {
           return (
@@ -60,7 +63,6 @@ export default function NavLinks({
 const propTypes = {
   label: PropTypes.string.isRequired,
   className: PropTypes.string,
-  to: PropTypes.string.isRequired,
   startDropdownIcon: PropTypes.any,
   endDropdownIcon: PropTypes.any,
   handleClick: PropTypes.func,
