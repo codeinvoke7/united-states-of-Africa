@@ -8,6 +8,3 @@ export const VolunteerContainer = () => {
     </div>
   )
 }
-
-
-
