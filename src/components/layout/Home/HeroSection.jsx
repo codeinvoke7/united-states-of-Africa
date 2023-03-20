@@ -49,17 +49,14 @@ export default function HeroSection() {
         </div>
 
         <div className="absolute max-w-xl flex justify-between mx-auto w-full p-1 sm:p-5 top-1/2 -translate-y-1/2">
-          <button
-            onClick={() => context?.prevTheme()}
-            className="btn btn-circle btn-sm sm:btn-md text-xl"
-          >
-            <RxCaretLeft />
+          <button onClick={() => context?.prevTheme()} className="btn btn-circle btn-sm sm:btn-md">
+            <RxCaretLeft className="w-7 h-7 text-primary" />
           </button>
           <button
             onClick={() => context?.nextTheme()}
             className="btn btn-circle btn-sm sm:btn-md text-xl"
           >
-            <RxCaretRight />
+            <RxCaretRight className="w-7 h-7 text-primary" />
           </button>
         </div>
       </div>
