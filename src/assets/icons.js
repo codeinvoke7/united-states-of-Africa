@@ -35,6 +35,10 @@ export const error404 = `${SVG_PATH}/404_error.svg`;
 
 export const daniel = `${SVG_PATH}/daniel.png`;
 
+export const mission = `${SVG_PATH}/mission.svg`;
+export const value = `${SVG_PATH}/value.svg`;
+export const vision = `${SVG_PATH}/vision.svg`;
+
 export const ahm2 = `${SVG_PATH}/ahm2.png`;
 export const bmhm = `${SVG_PATH}/bmhm.png`;
 export const bwc = `${SVG_PATH}/bwc.png`;
