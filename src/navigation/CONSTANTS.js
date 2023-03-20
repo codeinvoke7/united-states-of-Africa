@@ -16,6 +16,8 @@ export const TERMS_CONDITION = '/terms_condition';
 export const NEWS = '/news';
 export const WORKFORCE = '/workforce';
 export const REVIEWS = '/reviews';
+export const TEAM = '/team';
+
 export const SUBSCRIBE = '/subscribe';
 export const LOGIN = '/login';
 export const SIGN_IN = '/sign_in';
@@ -26,6 +28,7 @@ export const CONTACT_US = '/Contact_us';
 export const MISSION = '/mission';
 export const VISION = '/vision';
 export const GOAL = '/goal';
+export const VALUE = '/value';
 
 export const PARTNER = '/partner-with-us';
 

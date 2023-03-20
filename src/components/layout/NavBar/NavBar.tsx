@@ -15,7 +15,8 @@ import {
   DONATE,
   WORKFORCE,
   CAREERS,
-  CONTACT_US
+  CONTACT_US,
+  ABOUT
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -106,6 +107,10 @@ const navButtons: NavButtonType[] = [
   {
     label: 'About Us',
     dropdownLinks: [
+      {
+        to: ABOUT,
+        label: 'About us'
+      },
       {
         to: WORKFORCE,
         label: 'Workforce'
