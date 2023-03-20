@@ -6,7 +6,7 @@ export default function ScrollToTop() {
   const location = useLocation();
   useLayoutEffect(() => {
     try {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
     } catch (_) {
       window.scrollTo(0, 0);
     }
