@@ -1,6 +1,6 @@
-import React from 'react'
-import { Welcome, Volunteering, WhySection, VideoSection} from 'components/layout/Volunteer'
-import { SubscribeSection } from 'components/layout/Home'
+import React from 'react';
+import { Welcome, Volunteering, WhySection, VideoSection } from 'components/layout/Volunteer';
+import { SubscribeSection } from 'components/layout/Home';
 
 const VolunteerView = () => {
   return (
@@ -9,9 +9,9 @@ const VolunteerView = () => {
       <Volunteering />
       <WhySection />
       <VideoSection />
-      <SubscribeSection/>
+      <SubscribeSection />
     </div>
-  )
-}
+  );
+};
 
-export default VolunteerView
+export default VolunteerView;

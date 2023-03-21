@@ -9,12 +9,14 @@ export default function EventsSection() {
   return (
     <>
       <section className="relative overflow-hidden my-16">
-        <img
-          role="presentation"
-          src={subscribeBackground}
-          className="absolute max-w-full h-full object-cover bg-current"
-          alt="subscribe background image"
-        />
+        <div className="w-full h-full max-w-full overflow-hidden mx-auto bg-current">
+          <img
+            role="presentation"
+            src={subscribeBackground}
+            className="absolute w-full  max-w-full h-full object-cover bg-current"
+            alt="subscribe background image"
+          />
+        </div>
         <div className="relative place-items-center text-center max-w-xl mx-auto py-6">
           <h1 className="text-lg md:text-2xl text-primary leading-snug font-bold">
             Upcoming Events
