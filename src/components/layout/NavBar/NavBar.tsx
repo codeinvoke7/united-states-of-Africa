@@ -10,6 +10,7 @@ import {
   HOME,
   VOLUNTEER,
   DEPARTMENTS,
+  INTERNSHIP,
   FAQS,
   SIGN_IN,
   DONATE,
@@ -118,6 +119,10 @@ const navButtons: NavButtonType[] = [
       {
         to: CAREERS,
         label: 'Careers'
+      },
+      {
+        to: INTERNSHIP,
+        label: 'Internship'
       },
       {
         to: CONTACT_US,
