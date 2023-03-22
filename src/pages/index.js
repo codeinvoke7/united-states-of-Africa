@@ -8,3 +8,4 @@ export { default as Volunteer } from './VolunteerPage';
 export { default as Internship } from './InternshipPage';
 export { default as ContactUs } from './ContactUs';
 export { default as AboutUs } from './AboutUs';
+export { default as Workforce } from './Workforce';
