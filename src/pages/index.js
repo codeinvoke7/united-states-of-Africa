@@ -7,3 +7,4 @@ export { default as Login } from './Login';
 export { default as Volunteer } from './VolunteerPage';
 export { default as ContactUs } from './ContactUs';
 export { default as AboutUs } from './AboutUs';
+export { default as Departments } from './Departments';

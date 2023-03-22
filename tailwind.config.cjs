@@ -11,7 +11,8 @@ module.exports = withAnimations({
   theme: {
     fontFamily: {
       serif: ['Spectral', 'Georgia', 'Times New Roman', 'Times', 'serif'],
-      sans: ['roboto', 'sans-serif']
+      sans: ['roboto', 'sans-serif'],
+      poppins: ['Poppins', 'serif']
     },
     colors: {
       transparent: 'transparent',
