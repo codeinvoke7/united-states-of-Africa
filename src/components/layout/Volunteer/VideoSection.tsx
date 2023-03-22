@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import React from 'react';
-import { videoplayback, videoplayback2 } from 'assets/videos';
-=======
-import React from 'react'
 import { videoplayback2 } from 'assets/videos';
->>>>>>> d5ca480d443fe1ee54e3b8df956134e68cd15803
 import { WatchVolunteers } from 'assets/images';
 import ReactPlayer from 'react-player/file';
 
