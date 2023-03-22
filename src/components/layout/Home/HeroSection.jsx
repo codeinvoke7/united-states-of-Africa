@@ -32,7 +32,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div
-          className="bg-no-repeat bg-left-top absolute md:w-1/2 w-[55%] h-full right-0"
+          className="bg-no-repeat bg-left-top absolute md:w-1/2 w-[55%] h-full right-0 bg-cover"
           style={{
             backgroundImage: `url(${context.backgroundImage})`,
             maskImage: `url(${africaMaskBackground})`,
