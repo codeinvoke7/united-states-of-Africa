@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { videoPlaceholder } from 'assets/images';
 
 export default function AboutSection() {
+  const videoUrl = 'https://www.youtube.com/embed/live/_eDCFRn7eXs?feature=share';
   return (
     <section className="max-w-xl mx-auto my-10 grid md:grid-flow-col gap-8 px-6">
       <div className="place-self-center">
@@ -53,6 +54,13 @@ export default function AboutSection() {
       </div>
 
       <div className="place-self-center relative max-w-[24rem]">
+        {/* <iframe
+          className="w-full h-full aspect-square"
+          src={videoUrl}
+          title="Usaf Podcasts"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe> */}
         <img src={videoPlaceholder} className="aspect-square w-full h-full" />
         <MdPlayCircleOutline
           className={clsx(
