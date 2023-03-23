@@ -60,3 +60,6 @@ export const skv = `${SVG_PATH}/skv.png`;
 export const zuma = `${SVG_PATH}/zuma.png`;
 
 export const zumaridiChat = `${SVG_PATH}/zumaridi_chat.jpg`;
+
+export const prevPagination = `${SVG_PATH}/prev_pagination.svg`;
+export const nextPagination = `${SVG_PATH}/next_pagination.svg`;

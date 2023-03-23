@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { VOLUNTEER } from 'navigation/CONSTANTS';
 
@@ -32,6 +32,6 @@ const Volunteering = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Volunteering
+export default Volunteering;

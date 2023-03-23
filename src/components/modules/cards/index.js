@@ -14,6 +14,7 @@ export { default as TeamMemberCard } from './TeamMemberCard';
 export { default as ReviewCard } from './ReviewCard';
 export { default as AboutTeamMemberCard } from './AboutTeamMemberCard';
 export { default as GoalsCard } from './GoalsCard';
+export { default as DepartmentsCard } from './DepartmentsCard';
 
 export * from './GetInvolvedCard';
 export * from './HowToCard';
@@ -25,3 +26,4 @@ export * from './TeamMemberCard';
 export * from './ReviewCard';
 export * from './AboutTeamMemberCard';
 export * from './GoalsCard';
+export * from './DepartmentsCard';

@@ -53,5 +53,8 @@ export const faqImg = `${IMAGES_PATH}/faq-img.png`;
 export const customerSupport = `${IMAGES_PATH}/customer-support-img.png`;
 export const mapImg = `${IMAGES_PATH}/Mapsicle Map.png`;
 
+export const departmentsHeader = `${IMAGES_PATH}/departments_header.jpg`;
+export const headofDepartment1 = `${IMAGES_PATH}/departments_image.jpg`;
+
 export const internship = `${IMAGES_PATH}/internship.png`;
 export const faqs = `${IMAGES_PATH}/faqs.png`;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { videoplayback2 } from 'assets/videos';
 import { WatchVolunteers } from 'assets/images';
 import ReactPlayer from 'react-player/file';
@@ -11,17 +11,18 @@ const VideoSection = () => {
       </h2>
 
       <div className="w-full h-[400px]">
-        <ReactPlayer className='object-cover'
+        <ReactPlayer
+          className="object-cover"
           url={videoplayback2}
           controls
           light={WatchVolunteers}
           width={'100%'}
-          height={400}  
-          style={{objectFit:'cover'}}
+          height={400}
+          style={{ objectFit: 'cover' }}
         />
       </div>
     </div>
   );
-}
+};
 
-export default VideoSection
+export default VideoSection;

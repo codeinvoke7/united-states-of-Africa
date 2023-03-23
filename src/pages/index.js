@@ -8,4 +8,5 @@ export { default as Volunteer } from './VolunteerPage';
 export { default as Internship } from './InternshipPage';
 export { default as ContactUs } from './ContactUs';
 export { default as AboutUs } from './AboutUs';
+export { default as Departments } from './Departments';
 export { default as Workforce } from './Workforce';
