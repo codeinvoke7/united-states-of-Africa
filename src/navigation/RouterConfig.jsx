@@ -2,13 +2,27 @@ import { ProtectedRoutes } from 'components/guards';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-<<<<<<< HEAD
-import { HOME, LOGIN, VOLUNTEER, CONTACT_US, INTERNSHIP, ABOUT, DEPARTMENTS } from './CONSTANTS';
-import { Home, Login, Volunteer, Internship, PageNotFoundError, ContactUs, AboutUs, Departments } from 'pages';
-=======
-import { HOME, LOGIN, VOLUNTEER, CONTACT_US, INTERNSHIP, ABOUT, WORKFORCE } from './CONSTANTS';
-import { Home, Login, Volunteer, Internship, PageNotFoundError, ContactUs, AboutUs, Workforce } from 'pages';
->>>>>>> 8bb56eaa486aa690619b9b7aad91f1c422c1fb24
+import {
+  HOME,
+  LOGIN,
+  VOLUNTEER,
+  CONTACT_US,
+  INTERNSHIP,
+  ABOUT,
+  DEPARTMENTS,
+  WORKFORCE
+} from './CONSTANTS';
+import {
+  Home,
+  Login,
+  Volunteer,
+  Internship,
+  PageNotFoundError,
+  ContactUs,
+  AboutUs,
+  Departments,
+  Workforce
+} from 'pages';
 
 import { Page } from 'components/layout';
 
