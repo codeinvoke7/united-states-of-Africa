@@ -18,7 +18,7 @@ export default function SelectedSocialGroup({
         > = {
           target: '_blank',
           href: socialLink?.url!,
-          className: twMerge('btn btn-square hover:bg-primary', className),
+          className: twMerge('btn btn-square', className),
           key: `${socialLink?.name}${socialLink?.url}${index}`
         };
 

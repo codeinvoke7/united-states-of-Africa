@@ -65,7 +65,7 @@ export default function DepartmentsCard({
               <div className="card-actions flex-wrap ml-14 md:ml-7">
                 {
                   <SelectedSocialGroup
-                    className="btn btn-sm btn-secondary"
+                    className="btn btn-sm btn-secondary hover:bg-primary"
                     socialLinks={socialLinks}
                   />
                 }
