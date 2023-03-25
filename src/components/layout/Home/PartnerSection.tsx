@@ -25,8 +25,8 @@ export default function PartnerSection() {
       <h2 className="text-3xl px-3 font-bold font-serif">Our partners</h2>
 
       <div className="flex gap-3 my-10 flex-wrap place-content-center">
-        {partnersIcon.map((partnerLogo, index) => (
-          <img key={partnerLogo + index} src={partnerLogo} className="max-h-16 aspect-auto" />
+        {partnersIcon.map(({ alt, image }, index) => (
+          <img alt={alt} key={alt + image + index} src={image} className="max-h-16 aspect-auto" />
         ))}
       </div>
 
@@ -37,19 +37,24 @@ export default function PartnerSection() {
   );
 }
 
-const partnersIcon: string[] = [
-  ahm2,
-  bmhm,
-  bwc,
-  fwpp,
-  gpan,
-  gpanqc,
-  iheba,
-  skv,
-  zuma,
-  dmm,
-  palc,
-  sbtm,
-  swwp,
-  zumaridiChat
+interface PartnerType {
+  image: string;
+  alt: string;
+}
+
+const partnersIcon: PartnerType[] = [
+  { image: ahm2, alt: 'African History Month' },
+  { image: bmhm, alt: 'Black mental health matters' },
+  { image: bwc, alt: 'bwc' },
+  { image: fwpp, alt: 'fwpp' },
+  { image: gpan, alt: 'gpan' },
+  { image: gpanqc, alt: 'gpanqc' },
+  { image: iheba, alt: 'iheba' },
+  { image: skv, alt: 'skv' },
+  { image: zuma, alt: 'zuma' },
+  { image: dmm, alt: 'dmm' },
+  { image: palc, alt: 'palc' },
+  { image: sbtm, alt: 'sbtm' },
+  { image: swwp, alt: 'swwp' },
+  { image: zumaridiChat, alt: 'zumaridiChat' }
 ];

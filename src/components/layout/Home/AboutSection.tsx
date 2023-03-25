@@ -54,14 +54,7 @@ export default function AboutSection() {
       </div>
 
       <div className="place-self-center relative max-w-[24rem]">
-        {/* <iframe
-          className="w-full h-full aspect-square"
-          src={videoUrl}
-          title="Usaf Podcasts"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe> */}
-        <img src={videoPlaceholder} className="aspect-square w-full h-full" />
+        <img role="presentation" src={videoPlaceholder} className="aspect-square w-full h-full" />
         <MdPlayCircleOutline
           className={clsx(
             'btn btn-circle absolute bg-base-100 text-primary',

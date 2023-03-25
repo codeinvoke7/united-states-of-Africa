@@ -1,39 +1,38 @@
 import React from 'react';
-import { africa } from 'assets/images';
+import { usafLogo } from 'assets/icons';
+import { twMerge } from 'tailwind-merge';
 
 function WhoWeAre() {
   return (
-    <section className="bg-primary bg-opacity-5">
-      <div className="max-w-xl mx-auto p-6 grid md:grid-flow-col-dense place-items-center">
-        <h2 className="text-3xl font-bold text-primary text-center md:text-left font-serif">
-          Who We Are
-        </h2>
+    <section className="bg-primary bg-opacity-10">
+      <div className="max-w-xl mx-auto p-6 grid md:grid-flow-col-dense place-items-center gap-4">
         <img
           loading="lazy"
-          src={africa}
+          src={usafLogo}
           role="presentation"
-          className="w-full h-full max-h-80 object-cover md:order-2"
+          className="w-full h-full max-h-72 object-cover aspect-square"
         />
         <div className="md:text-left text-center font-serif">
+          <h2 className="text-xl font-bold text-left font-serif">Who We Are</h2>
           <p className="mt-4">
-            The United States of Africa is a hypothetical concept of a federation of some or all of
-            the 55 sovereign states on the continent of Africa. The concept takes its origin from
-            Marcus Garvey’s 1924 poem “Hail, United States of Africa.
+            Who we Are: Welcome to United States of Africa! We are a non-profit corporation based in
+            Texas, USA, dedicated to promoting unity and cooperation among African states and people
+            of African descent around the world.
+          </p>
+
+          <p className="mt-4">
+            We strongly believe that technology can be a powerful conduit to achieve greater social
+            and economic impact, and to connect and empower Africans globally. That's why we're
+            committed to harnessing the power of technology to drive growth and development across
+            the African continent.
           </p>
           <p className="mt-4">
-            Inspired by Marcus Garvey and other Pan Africanists like Dr. Kwame Nkrumah, Malcolm X
-            and Muammar Gaddafi quest for a unified Africa, a Kenyan Pan Africanist Daniel Mwambonu
-            started United States of Africa project on 7 March 2016 through a Facebook Page but
-            thereafter it attracted following worldwide.
-          </p>
-          <p className="mt-4">
-            The United States of Africa was registered as a non profit in Dallas, Texas in the
-            United States on 30th June 2020 with the assistance of Ethiopia’s first international
-            model Yeharerwerk Gashaw and also the first Vice President of the United States of
-            Africa. United States of Africa continues to champion unity of all people of African
-            descent and foster political union of Sovereign African states in Africa, Caribbean,
-            Melanesia and black nations globally. We affirm our undying resolve to provide solutions
-            to problems affecting Africa and its people throughout the world.
+            Through our commitment to Pan Africanism, we strive to unite Africans and foster
+            collaboration, as we work towards our shared goal of building a prosperous and united
+            Africa. We recognize the critical role that technological advancement plays in achieving
+            sustainable growth and development, and we invite you to join us in our mission to
+            advance the technological capabilities of Africa and build a brighter future for all
+            Africans. Let's create the Africa we want.
           </p>
         </div>
       </div>
