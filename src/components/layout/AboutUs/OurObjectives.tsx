@@ -4,10 +4,10 @@ import React from 'react';
 export default function OurObjectives() {
   return (
     <section className="max-w-xl mx-auto">
-      <div className="p-4 grid grid-flow-col gap-4 place-items-center">
+      <div className="p-4 grid md:grid-flow-col gap-4 place-items-center">
         <img
           src={objectives}
-          className="w-full mx-auto max-h-72 aspect-square md:order-2 order-1"
+          className="w-full mx-auto max-h-72 aspect-square md:order-2"
           alt="USAF objectives"
         />
 
