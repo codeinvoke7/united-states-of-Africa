@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AiOutlineCaretDown } from 'react-icons/ai';
+import { BiChevronDown } from 'react-icons/bi';
 
 export default function OurStory() {
   return (
@@ -26,9 +26,11 @@ export default function OurStory() {
           expressed optimism that the United States of Africa could exist as early as 2017...
         </p>
 
-        <Link to={''} className="link link-hover flex mt-6">
-          View more <AiOutlineCaretDown className="w-6 h-6" />
-        </Link>
+        <div>
+          <Link to={''} className="link link-hover inline-flex mt-6">
+            View more <BiChevronDown className="w-6 h-6" />
+          </Link>
+        </div>
       </div>
     </section>
   );
