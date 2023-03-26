@@ -10,7 +10,7 @@ function WhoWeAre() {
           loading="lazy"
           src={usafLogo}
           role="presentation"
-          className="w-full h-full max-h-72 object-cover aspect-square"
+          className="w-full h-full max-h-72 object-contain aspect-square"
         />
         <div className="md:text-left text-center font-serif">
           <h2 className="text-xl font-bold text-left font-serif">Who We Are</h2>
