@@ -1,20 +1,19 @@
 import React from 'react';
-import { africa } from 'assets/images';
+import { usafLogo } from 'assets/icons';
+import { twMerge } from 'tailwind-merge';
 
 function WhoWeAre() {
   return (
-    <section className="bg-primary bg-opacity-5">
-      <div className="max-w-xl mx-auto p-6 grid md:grid-flow-col-dense place-items-center">
-        <h2 className="text-3xl font-bold text-primary text-center md:text-left font-serif">
-          Who We Are
-        </h2>
+    <section className="bg-primary bg-opacity-10">
+      <div className="max-w-xl mx-auto p-6 grid md:grid-flow-col-dense place-items-center gap-4">
         <img
           loading="lazy"
-          src={africa}
+          src={usafLogo}
           role="presentation"
-          className="w-full h-full max-h-80 object-cover md:order-2"
+          className="w-full h-full max-h-72 object-cover aspect-square"
         />
         <div className="md:text-left text-center font-serif">
+          <h2 className="text-xl font-bold text-left font-serif">Who We Are</h2>
           <p className="mt-4">
             Who we Are: Welcome to United States of Africa! We are a non-profit corporation based in
             Texas, USA, dedicated to promoting unity and cooperation among African states and people

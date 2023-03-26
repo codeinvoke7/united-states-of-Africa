@@ -1,7 +1,9 @@
 const SVG_PATH = '/assets/icons';
 
-export const usafLogo = `${SVG_PATH}/usaf_logo.png`;
+export const usafLogo = `${SVG_PATH}/usaf_logo.svg`;
 export const usafFlag = `${SVG_PATH}/usaf_flag.png`;
+
+export const objectives = `${SVG_PATH}/objectives.svg`;
 
 export const anchor = `${SVG_PATH}/anchor.png`;
 export const googlepodcast = `${SVG_PATH}/googlepodcast.png`;
@@ -23,8 +25,9 @@ export const volunteer = `${SVG_PATH}/volunteer.svg`;
 export const member = `${SVG_PATH}/member.svg`;
 
 export const confirmation = `${SVG_PATH}/confirmation.svg`;
-export const enjoy = `${SVG_PATH}/enjoy.svg`;
-export const position = `${SVG_PATH}/position.svg`;
+export const apply = `${SVG_PATH}/apply.svg`;
+export const getInterviewed = `${SVG_PATH}/get_interviewed.svg`;
+export const getIvolved = `${SVG_PATH}/get_involved.svg`;
 
 export const education = `${SVG_PATH}/education.svg`;
 export const humanRights = `${SVG_PATH}/human_rights.svg`;

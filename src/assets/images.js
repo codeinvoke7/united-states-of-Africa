@@ -10,9 +10,6 @@ export const heroBackground = `${IMAGES_PATH}/hero_background.png`;
 export const heroBackground2 = `${IMAGES_PATH}/hero_background_2.png`;
 export const heroBackground3 = `${IMAGES_PATH}/hero_background_3.jpg`;
 
-export const USAFObjectives = `${IMAGES_PATH}/USAF_objectives.svg`;
-export const USAFObjectivesMobile = `${IMAGES_PATH}/USAF_objectives_mobile.svg`;
-
 export const africa = `${IMAGES_PATH}/africa.png`;
 
 export const afrocentric = `${IMAGES_PATH}/afrocentric.png`;
@@ -45,9 +42,9 @@ export const teamMember2 = `${IMAGES_PATH}/team_member2.png`;
 export const teamMember3 = `${IMAGES_PATH}/team_member3.png`;
 export const teamMember4 = `${IMAGES_PATH}/team_member4.png`;
 
-export const podcast1 = `${IMAGES_PATH}/podcast1.png`;
-export const podcast2 = `${IMAGES_PATH}/podcast2.png`;
-export const podcast3 = `${IMAGES_PATH}/podcast3.png`;
+export const podcast1 = `${IMAGES_PATH}/podcast_1.png`;
+export const podcast2 = `${IMAGES_PATH}/podcast_2.png`;
+export const podcast3 = `${IMAGES_PATH}/podcast_3.png`;
 
 export const faqImg = `${IMAGES_PATH}/faq-img.png`;
 export const customerSupport = `${IMAGES_PATH}/customer-support-img.png`;

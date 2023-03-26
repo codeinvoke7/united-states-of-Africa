@@ -12,15 +12,16 @@ import React from 'react';
 
 export default function WhatWeDo() {
   return (
-    <section className="">
-      <h1 className="text-3xl text-primary font-bold mb-2 max-w-xl mx-auto px-4">What We Do</h1>
+    <section className="bg-primary bg-opacity-5">
+      <h1 className="text-xl font-bold mb-2 max-w-xl mx-auto px-4">What We Do</h1>
       <div className="grid gap-6 md:grid-flow-col place-items-center max-w-xl mx-auto p-4">
         <picture>
           <source srcSet={technologyInnovation} media="(min-width: 48rem)" />
           <img
             loading="lazy"
             src={technologyInnovationMobile}
-            className="w-full h-full object-cover max-h-72"
+            className="w-full h-full object-cover max-h-72 rounded-full aspect-square"
+            alt="Technology and Innovations"
           />
         </picture>
 
@@ -39,14 +40,15 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className="bg-primary bg-opacity-5">
+      <div className="">
         <div className="grid gap-6 md:grid-flow-col place-items-center max-w-xl mx-auto p-4">
           <picture className="md:order-2">
             <source srcSet={humanRights} media="(min-width: 48rem)" />
             <img
               loading="lazy"
               src={humanRightsMobile}
-              className="w-full h-full object-cover max-h-72"
+              alt="Human Rights"
+              className="w-full h-full object-cover max-h-72 rounded-full aspect-square"
             />
           </picture>
           <div className="flex flex-col place-content-center mt-6">
@@ -74,49 +76,52 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-flow-col place-items-center max-w-xl mx-auto p-4">
-        <picture>
-          <source srcSet={mentalHealth} media="(min-width: 48rem)" />
-          <img
-            loading="lazy"
-            src={mentalHealthMobile}
-            className="w-full h-full object-cover max-h-72"
-          />
-        </picture>
-
-        <div className="flex flex-col place-content-center">
-          <h3 className="mb-6 text-xl font-bold">Mental Health</h3>
-          <p>
-            At the Mental Health Department of United States of Africa, we're dedicated to improving
-            mental health outcomes for individuals of all ages across the continent. Our mission is
-            to develop a continental mental health strategy, eradicate stigma, and increase access
-            to evidence-based clinical research and services, including encouraging an
-            African-centered approach to treatment and diagnosis.
-            <br />
-            We believe that mental health care should be culturally responsive and grounded in the
-            unique experiences and perspectives of African communities. That's why we're advancing
-            an African-centered approach to mental health care, which takes into account the
-            historical, cultural, and social factors that impact mental health and well-being.
-            <br />
-            Our efforts also include advancing mental health equity through research. We believe
-            that everyone deserves access to high-quality mental health care, regardless of their
-            background or circumstances. That's why we're committed to conducting research that
-            identifies and addresses disparities in mental health care access and outcomes.
-            <br />
-            Join us in our mission to promote mental wellness, increase access to culturally
-            responsive care, and create a brighter, more equitable future for all.
-          </p>
+      <div className="bg-primary bg-opacity-5">
+        <div className="grid gap-6 md:grid-flow-col place-items-center max-w-xl mx-auto p-4">
+          <picture>
+            <source srcSet={mentalHealth} media="(min-width: 48rem)" />
+            <img
+              loading="lazy"
+              src={mentalHealthMobile}
+              className="w-full h-full object-cover max-h-72 rounded-full aspect-square"
+              alt="Mental Health"
+            />
+          </picture>
+          <div className="flex flex-col place-content-center">
+            <h3 className="mb-6 text-xl font-bold">Mental Health</h3>
+            <p>
+              At the Mental Health Department of United States of Africa, we're dedicated to
+              improving mental health outcomes for individuals of all ages across the continent. Our
+              mission is to develop a continental mental health strategy, eradicate stigma, and
+              increase access to evidence-based clinical research and services, including
+              encouraging an African-centered approach to treatment and diagnosis.
+              <br />
+              We believe that mental health care should be culturally responsive and grounded in the
+              unique experiences and perspectives of African communities. That's why we're advancing
+              an African-centered approach to mental health care, which takes into account the
+              historical, cultural, and social factors that impact mental health and well-being.
+              <br />
+              Our efforts also include advancing mental health equity through research. We believe
+              that everyone deserves access to high-quality mental health care, regardless of their
+              background or circumstances. That's why we're committed to conducting research that
+              identifies and addresses disparities in mental health care access and outcomes.
+              <br />
+              Join us in our mission to promote mental wellness, increase access to culturally
+              responsive care, and create a brighter, more equitable future for all.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="bg-primary bg-opacity-5">
+      <div className="">
         <div className="grid gap-6 md:grid-flow-col place-items-center max-w-xl mx-auto p-4">
           <picture className="md:order-2">
             <source srcSet={afrocentric} media="(min-width: 48rem)" />
             <img
               loading="lazy"
               src={afrocentricMobile}
-              className="w-full h-full object-cover max-h-72"
+              className="w-full h-full object-cover max-h-72 rounded-full aspect-square"
+              alt="Afrocentric Education"
             />
           </picture>
           <div className="flex flex-col place-content-center mt-6">
