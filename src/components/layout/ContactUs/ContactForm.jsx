@@ -1,4 +1,4 @@
-import { paperclip } from 'assets/icons';
+// import { paperclip } from 'assets/icons';
 import { useState } from 'react';
 
 export default function ContactForm() {
@@ -109,10 +109,10 @@ export default function ContactForm() {
           className=" text-[#39B755] rounded-lg focus:border focus:border-[#39B755] active:border-[#39B755]"
         />
 
-        <button className="flex rounded-lg border border-[#39B755] px-4 py-2 mt-3">
+        {/* <button className="flex rounded-lg border border-[#39B755] px-4 py-2 mt-3">
           <img src={paperclip} alt="paperclip" />
           <span className="ml-3 text-[#39B755]"> Attach File</span>
-        </button>
+        </button> */}
 
         <div className="flex items-center justify-center mt-14">
           <button className="bg-[#07AA3D] text-[#FFF] text-sm py-4 px-6 rounded-full">
