@@ -9,20 +9,22 @@ export default function EventsSection() {
   return (
     <>
       <section className="relative overflow-hidden my-16">
-        <img
-          role="presentation"
-          src={subscribeBackground}
-          className="absolute max-w-full h-full object-cover bg-current"
-          alt="subscribe background image"
-        />
+        <div className="w-full h-full max-w-full overflow-hidden mx-auto bg-current">
+          <img
+            role="presentation"
+            src={subscribeBackground}
+            className="absolute w-full  max-w-full h-full object-cover bg-current"
+            alt="subscribe background image"
+          />
+        </div>
         <div className="relative place-items-center text-center max-w-xl mx-auto py-6">
           <h1 className="text-lg md:text-2xl text-primary leading-snug font-bold">
             Upcoming Events
           </h1>
-          <p className="mt-3 text-xl lg:text-4xl leading-snug font-bold text-[#fff]">
+          <p className="mt-3 text-xl lg:text-4xl leading-snug font-bold text-base-100">
             Be Ready For Our Events
           </p>
-          <p className="max-w-md mx-auto mt-3 text-xs md:text-lg leading-snug font-normal text-[#fff]">
+          <p className="max-w-md mx-auto mt-3 text-xs md:text-lg leading-snug font-normal text-base-100">
             United States of Africa is an Initiative working towards unification of all people of
             African descent under one political kingdom based in Africa.
           </p>

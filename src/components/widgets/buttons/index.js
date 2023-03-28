@@ -16,4 +16,7 @@ export { default as NavLinkButton } from './NavLink';
 export { default as FooterLink } from './FooterLink';
 
 export { default as SocialGroupButton } from './SocialGroup';
+export { default as SelectedSocialGroup } from './SelectedSocialGroup';
+
+export * from './SelectedSocialGroup';
 export * from './SocialGroup';

@@ -10,12 +10,14 @@ import {
   HOME,
   VOLUNTEER,
   DEPARTMENTS,
+  INTERNSHIP,
   FAQS,
   SIGN_IN,
   DONATE,
   WORKFORCE,
   CAREERS,
-  CONTACT_US
+  CONTACT_US,
+  ABOUT
 } from 'navigation/CONSTANTS';
 import { useMemo } from 'react';
 import { useState } from 'react';
@@ -107,12 +109,20 @@ const navButtons: NavButtonType[] = [
     label: 'About Us',
     dropdownLinks: [
       {
+        to: ABOUT,
+        label: 'About us'
+      },
+      {
         to: WORKFORCE,
         label: 'Workforce'
       },
       {
         to: CAREERS,
         label: 'Careers'
+      },
+      {
+        to: INTERNSHIP,
+        label: 'Internship'
       },
       {
         to: CONTACT_US,
