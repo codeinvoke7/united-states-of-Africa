@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function PageNotFound() {
   return (
-    <section className="w-full h-full grid grid-cols-2 max-w-xl mx-auto px-6">
+    <section className="w-full h-full grid sm:grid-cols-2 max-w-xl mx-auto px-6">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-9xl font-bold my-5 font-serif text-center uppercase">
           404 <span className="block text-4xl my-2">SORRY! PAGE NOT FOUND</span>

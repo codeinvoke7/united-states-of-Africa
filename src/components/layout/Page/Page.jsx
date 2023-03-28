@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Footer, Header, NavBar } from 'components/layout';
+import { Footer, Header, NavBar, GoToTop } from 'components/layout';
 import { PageHeaderColorContextProvider } from 'components/context';
 
 export default function Page() {
@@ -13,6 +13,7 @@ export default function Page() {
       </main>
 
       <Footer />
+      <GoToTop />
     </PageHeaderColorContextProvider>
   );
 }

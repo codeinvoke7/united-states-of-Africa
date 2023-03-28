@@ -39,7 +39,7 @@ export default function ContactForm() {
 
   let comfirmation = setValues.messageSent ? <div>Message Sent</div> : null;
   return (
-    <form className="bg-[#ECF9EF] flex justify-center mt-20 mb-5 pb-14 pt-14 font-serif">
+    <form className="bg-neutral-50 flex justify-center mt-20 mb-5 pb-14 pt-14 font-serif">
       <div className="md:w-96 w-72">
         {comfirmation}
         <div className="flex flex-col mb-5">
@@ -115,7 +115,7 @@ export default function ContactForm() {
             rows="3"
             placeholder="Max. 5000 words"
             required
-            className="rounded-lg border-[rgba(37, 55, 63, 0.3)] placeholder:text-right"
+            className="rounded-lg border-neutral placeholder:text-right"
           ></textarea>
         </div>
 

@@ -1,38 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GiSoundWaves } from 'react-icons/gi';
-import { AiFillPlayCircle } from 'react-icons/ai';
 
 const propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  channel: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 };
 
 export type PodcastCardProps = PropTypes.InferProps<typeof propTypes>;
 
-export default function PodcastCard({ image, title, description, url }: PodcastCardProps) {
+export default function PodcastCard({ image, title, channel, url }: PodcastCardProps) {
   return (
-    <div className="card card-side">
+    <div className="card rounded-none">
       <figure>
         <img
           src={image}
           alt="Podcast image"
           loading="lazy"
-          className="w-[50px] h-auto md:w-19 h-17 aspect-square"
+          className="w-full h-full aspect-video object-cover"
         />
       </figure>
 
-      <div className="card-body p-1 lg:pl-4 lg:p-4">
-        <h3 className="card-title font-serif text-xs font-md text-neutral md:text-md">{title}</h3>
-        <div className="flex">
-          <p className="text-[#271a1a] text-xs font-light md:text-md">{description}</p>
-          <a href={url} target="_blank" className="flex">
-            <AiFillPlayCircle className="text-primary cursor-pointer" />
-            <GiSoundWaves className="w-10" />
-          </a>
-        </div>
+      <div className="card-body p-0 py-1">
+        <a target="_blank" href={url} className="card-title">
+          {title}
+        </a>
+        <p className="opacity-70 mt-4">{channel}</p>
       </div>
     </div>
   );

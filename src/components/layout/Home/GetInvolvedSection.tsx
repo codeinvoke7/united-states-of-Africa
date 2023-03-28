@@ -1,5 +1,5 @@
 import { donation, fundraiser, member, volunteer } from 'assets/icons';
-import { WhatWeDoCardProps, GetInvolvedCard, GetInvolvedCardProps } from 'components/modules/cards';
+import { WhatWeDoCardProps, GetInvolvedCard, GoalsCardProps } from 'components/modules/cards';
 import { DONATE, FUNDRAISE, VOLUNTEER, SIGN_IN, SUBSCRIBE_AS_PATRON } from 'navigation/CONSTANTS';
 import React from 'react';
 
@@ -13,7 +13,7 @@ export default function GetInvolvedSection() {
   );
 }
 
-const cardsData: GetInvolvedCardProps[] = [
+const cardsData: GoalsCardProps[] = [
   {
     title: 'Become A Volunteer',
     description:
