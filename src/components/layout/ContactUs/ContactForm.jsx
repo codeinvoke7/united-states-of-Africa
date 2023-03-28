@@ -1,5 +1,6 @@
 // import { paperclip } from 'assets/icons';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import Recaptcha from 'react-google-invisible-recaptcha';
 
 export default function ContactForm() {
   const [values, setValues] = useState({
@@ -8,10 +9,12 @@ export default function ContactForm() {
     email: '',
     subject: '',
     message: '',
-    file: ''
+    file: '',
+    messageSent: false
   });
 
   // console.log('v', values);
+  const recaptchaRef = useRef(); // create a reference
 
   const handleChange = (e) => {
     setValues({
@@ -20,9 +23,25 @@ export default function ContactForm() {
     });
   };
 
+  const sendMessage = (e) => {
+    e.preventDefault();
+
+    recaptchaRef.current.execute(); // call the execute method using the reference
+  };
+
+  const onResolved = () => {
+    setValues({
+      messageSent: true
+    });
+    console.log(values);
+    // Process data or send something to an api
+  };
+
+  let comfirmation = setValues.messageSent ? <div>Message Sent</div> : null;
   return (
     <form className="bg-[#ECF9EF] flex justify-center mt-20 mb-5 pb-14 pt-14 font-serif">
       <div className="md:w-96 w-72">
+        {comfirmation}
         <div className="flex flex-col mb-5">
           <label htmlFor="" className="text-lg md:text-xl">
             First Name
@@ -115,10 +134,19 @@ export default function ContactForm() {
         </button> */}
 
         <div className="flex items-center justify-center mt-14">
-          <button className="bg-[#07AA3D] text-[#FFF] text-sm py-4 px-6 rounded-full">
+          <button
+            onClick={sendMessage}
+            className="bg-[#07AA3D] text-[#FFF] text-sm py-4 px-6 rounded-full"
+          >
             Get In Touch
           </button>
         </div>
+
+        <Recaptcha
+          ref={recaptchaRef} // assign the reference
+          sitekey="6LfIqgQlAAAAABXgs6brHWV1OmWOX-3z6YkvI1E6"
+          onResolved={onResolved}
+        />
       </div>
     </form>
   );
