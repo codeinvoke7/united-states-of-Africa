@@ -11,7 +11,7 @@ export default function ContactForm() {
     file: ''
   });
 
-  console.log('v', values);
+  // console.log('v', values);
 
   const handleChange = (e) => {
     setValues({
