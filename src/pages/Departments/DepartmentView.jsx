@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { departmentsHeader } from 'assets/images';
-import { DepartmentSection, Search } from 'components/layout/Departments';
+import { DepartmentSection } from 'components/layout/Departments';
 
 export const DepartmentView = () => {
   return (
@@ -27,7 +27,7 @@ export const DepartmentView = () => {
           </div>
         </div>
       </section>
-      <Search />
+      {/* <Search /> */}
       <DepartmentSection />
       {/* <PaginationNav1Presentation /> */}
     </Fragment>
