@@ -21,10 +21,10 @@ export default function EventsSection() {
           <h1 className="text-lg md:text-2xl text-primary leading-snug font-bold">
             Upcoming Events
           </h1>
-          <p className="mt-3 text-xl lg:text-4xl leading-snug font-bold text-[#fff]">
+          <p className="mt-3 text-xl lg:text-4xl leading-snug font-bold text-base-100">
             Be Ready For Our Events
           </p>
-          <p className="max-w-md mx-auto mt-3 text-xs md:text-lg leading-snug font-normal text-[#fff]">
+          <p className="max-w-md mx-auto mt-3 text-xs md:text-lg leading-snug font-normal text-base-100">
             United States of Africa is an Initiative working towards unification of all people of
             African descent under one political kingdom based in Africa.
           </p>
