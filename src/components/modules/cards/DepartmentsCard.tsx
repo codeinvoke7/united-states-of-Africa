@@ -48,7 +48,7 @@ export default function DepartmentsCard({
     <div className="bg-[#E4FFEE40] shadow-xl p-5 my-5 grid gap-5 font-poppins hover:text-[#39B755]">
       <div>
         <h2 className="text-2xl text-center pb-10">{title}</h2>
-        <div className="flex flex-col md:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-3 flex-col md:flex-row">
           <div className="ml-12 md:ml-0">
             <img
               src={image}
@@ -62,7 +62,7 @@ export default function DepartmentsCard({
                 {role}
               </p>
               <p>{location}</p>
-              <div className="card-actions flex-wrap ml-14 md:ml-7">
+              <div className="card-actions flex-wrap ml-14 md:ml-38">
                 {
                   <SelectedSocialGroup
                     className="btn btn-sm btn-dark hover:bg-primary"
@@ -73,9 +73,9 @@ export default function DepartmentsCard({
             </div>
           </div>
 
-          <div className="md:mx-10 pt-5">
+          <div className="col-span-2 md:mx-10 pt-5">
             <h3 className="font-black text-center">{textTitle}</h3>
-            <p className="truncate whitespace-pre-line">{text}</p>
+            <p className="truncate font-sans whitespace-pre-line">{text}</p>
             <a
               className="text-right text-primary hover:text-[#ff0000] ml-20 md:ml-48"
               href={actionButtonUrl}
