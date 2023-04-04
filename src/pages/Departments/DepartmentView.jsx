@@ -27,9 +27,7 @@ export const DepartmentView = () => {
           </div>
         </div>
       </section>
-      {/* <Search /> */}
       <DepartmentSection />
-      {/* <PaginationNav1Presentation /> */}
     </Fragment>
   );
 };

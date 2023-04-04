@@ -64,11 +64,13 @@ function DepartmentSection() {
 
   return (
     <Fragment>
-      <section className="grid grid-cols-1 md:grid-cols-2 font-poppins bg-[#E4FFEE] text-xl md:text-3xl shadow-xl  w-full text-center p-5">
-        <h1 className="p-4">Our various Departments and their functions</h1>
+      <section className="grid grid-cols-1 md:grid-cols-2  font-poppins bg-[#E4FFEE] text-xl md:text-3xl shadow-xl  w-full text-center p-5">
+        <h1 className="p-4 md:p-2">
+          Explore our Departments and learn how you can get involved in our mission
+        </h1>
         <form action="" onSubmit={handleSubmit}>
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 md:left-36 flex items-center pl-3 pointer-events-none">
+          <div className="relative p-4">
+            <div className="absolute inset-y-0 left-3 md:left-20 lg:left-36 flex items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
                 className="w-5 h-5 text-[#39B755] dark:text-gray-400"
