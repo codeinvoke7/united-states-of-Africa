@@ -10,11 +10,10 @@ import {
   member3
 } from 'assets/images';
 import { SubscribeSection } from 'components/layout/Home';
-
+import { Seo } from 'Seo';
 import { RxCaretRight } from 'react-icons/rx';
 
 const Teamcard = (member, key) => {
-  console.log(member);
   member = member.member;
   return (
     <div className=" rounded  lg:w-10/12" key={key}>
@@ -42,9 +41,18 @@ const Teamcard = (member, key) => {
   );
 };
 
-export const WorkforceView = () => {
+export const WorkforceView: React.FC = () => {
+  const currentUrl = window.location.href;
+  const canonicalUrl = currentUrl.split('?')[0].split('#')[0];
+
   return (
     <>
+      <Seo
+        title="United States of Africa Workforce"
+        description="To be able to make the impact that we are committed to make, it takes an impactful group of passionate people."
+        type="article"
+        url={canonicalUrl}
+      />
       <section className="bg-neutral text-neutral-content">
         <div className="relative grid place-content-center px-4 py-24 max-w-xl mx-auto min-h-[12rem]">
           <picture className="absolute inset-0 opacity-70">

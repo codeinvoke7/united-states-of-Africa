@@ -1,9 +1,16 @@
+import React from 'react';
 import { faqImg, customerSupport } from 'assets/images';
 import { ContactForm, MapSection } from 'components/layout/ContactUs';
+import { Seo } from 'Seo';
 
-export const ContactUsView = () => {
+export const ContactUsView: React.FC = () => {
+  const currentUrl = window.location.href;
+  const canonicalUrl = currentUrl.split('?')[0].split('#')[0];
+
   return (
     <>
+      <Seo title="ContactUs" description="Get in touch with us" type="article" url={canonicalUrl} />
+
       <section className="font-serif max-w-xl mx-auto">
         <div
           className="mb-16 pt-24 relative"

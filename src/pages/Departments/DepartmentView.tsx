@@ -1,10 +1,20 @@
 import React, { Fragment } from 'react';
 import { departmentsHeader } from 'assets/images';
 import { DepartmentSection } from 'components/layout/Departments';
+import { Seo } from 'Seo';
 
-export const DepartmentView = () => {
+export const DepartmentView: React.FC = () => {
+  const currentUrl = window.location.href;
+  const canonicalUrl = currentUrl.split('?')[0].split('#')[0];
+
   return (
     <Fragment>
+      <Seo
+        title="United States of Africa Departments"
+        description="Explore our Departments and learn how you can get involved in our mission"
+        type="article"
+        url={canonicalUrl}
+      />
       <section>
         <div
           className="pt-24 relative"

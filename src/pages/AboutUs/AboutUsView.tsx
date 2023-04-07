@@ -5,10 +5,21 @@ import { GoalsCard, GoalsCardProps } from 'components/modules/cards';
 import { mission, value, vision } from 'assets/icons';
 import { MISSION, VALUE, VISION } from 'navigation/CONSTANTS';
 import { SubscribeSection } from 'components/layout/Home';
+import { Seo } from 'Seo';
 
-export const AboutUsView = () => {
+export const AboutUsView: React.FC = () => {
+  const currentUrl = window.location.href;
+  const canonicalUrl = currentUrl.split('?')[0].split('#')[0];
+
   return (
     <>
+      <Seo
+        title="AboutUs"
+        description="Welcome to United States of Africa! We are a non-profit corporation based in Texas, USA, dedicated to promoting unity and cooperation among African states and people of African descent around the world."
+        type="article"
+        url={canonicalUrl}
+      />
+
       <section className="bg-neutral text-neutral-content relative">
         <div className="relative grid place-content-center px-4 py-24 max-w-xl mx-auto min-h-[12rem]">
           <picture className="absolute inset-0 opacity-70">
